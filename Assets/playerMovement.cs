@@ -53,13 +53,13 @@ public class playerMovement : MonoBehaviour
     public void jumpInput()
     {
 
-        if (Input.GetKey(KeyCode.W))
+        if ( (Input.GetKey(KeyCode.W) && playerNumber == 1 ) || (Input.GetKey(KeyCode.UpArrow) && playerNumber == 2))
         {
-            Debug.Log("w pressed::" + canJump);
+           // Debug.Log("w pressed::" + canJump);
 
             if (canJump)
             {
-                Debug.Log("went through");
+                //Debug.Log("went through");
                 jumpPending = true;
                 canJump = false;
             }
@@ -72,7 +72,7 @@ public class playerMovement : MonoBehaviour
     /// </summary>
     public void attackInput()
     {
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+        if ( (Input.GetKeyDown(KeyCode.LeftShift) && playerNumber == 1) || Input.GetKeyDown(KeyCode.Keypad0) && playerNumber == 2)
         {
             
             Debug.Log("shift pressed::" + canAttack);
