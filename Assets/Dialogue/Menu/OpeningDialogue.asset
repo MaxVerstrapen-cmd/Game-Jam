@@ -19,9 +19,15 @@ MonoBehaviour:
   - text: The Battle is About to Begin
     portrait: {fileID: 0}
     soundEffect: {fileID: 0}
-  - text: Choose your fighter wisely
+  - text: Two Fighters have entered the arena once again....
     portrait: {fileID: 0}
     soundEffect: {fileID: 0}
-  - text: Your Journey Starts Now
+  - text: Green fights for Player One
+    portrait: {fileID: 21300000, guid: 6ec27bd7f69586846a1a8348ea74d6bc, type: 3}
+    soundEffect: {fileID: 0}
+  - text: ' Purple fights for Player Two'
+    portrait: {fileID: 0}
+    soundEffect: {fileID: 0}
+  - text: Prepare to fight!
     portrait: {fileID: 0}
     soundEffect: {fileID: 0}

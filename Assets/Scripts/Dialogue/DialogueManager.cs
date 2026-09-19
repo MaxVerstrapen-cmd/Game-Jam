@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -9,6 +10,8 @@ public class DialogueManager : MonoBehaviour
     public TMP_Text speakerNameText;
     public TMP_Text dialogueText;
     public Image portraitImage;
+
+    public event Action OnDialogueFinished;
 
     private DialogueData currentDialogue;
     private int currentLineIndex;
@@ -69,5 +72,7 @@ public class DialogueManager : MonoBehaviour
 
         currentDialogue = null;
         currentLineIndex = 0;
+
+        OnDialogueFinished?.Invoke();
     }
 }
