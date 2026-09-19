@@ -10,6 +10,7 @@ public class playerMovement : MonoBehaviour
     // Start is called before the first frame update
     private Rigidbody2D rb;
     private Vector2 movement;
+    Animator anim;
 
     private int jumpForce;
     private int moveSpeed;
@@ -48,6 +49,7 @@ public class playerMovement : MonoBehaviour
     {
         jumpForce = 18;
         attackForce = 17;
+        anim = GetComponent<Animator>();
 
         movement = Vector2.zero;
         rb = GetComponent<Rigidbody2D>();
@@ -201,6 +203,10 @@ public class playerMovement : MonoBehaviour
 
         if (attackPending)
         {
+            if(playerNumber == 1)
+            {
+                anim.SetTrigger("Attack");
+            }
             isAttacking = true;
             isAttackingTimer = Time.time + 0.3f;
             

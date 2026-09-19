@@ -24,6 +24,7 @@ public class PlayerAnimation : MonoBehaviour
         }
     }
 
+
     float GetHorizontalInput()
     {
         if (playerNumber == 1)
