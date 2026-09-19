@@ -27,8 +27,8 @@ public class playerMovement : MonoBehaviour
 
     void Start()
     {
-        jumpForce = 12;
-        attackForce = 12;
+        jumpForce = 18;
+        attackForce = 17;
 
         movement = Vector2.zero;
         rb = GetComponent<Rigidbody2D>();
@@ -36,7 +36,7 @@ public class playerMovement : MonoBehaviour
         canJump = true;
         canAttack = true;
 
-        
+       
     }
 
 
@@ -68,7 +68,7 @@ public class playerMovement : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
-            
+           
             Debug.Log("shift pressed::" + canAttack);
 
             if (canAttack)
@@ -82,10 +82,11 @@ public class playerMovement : MonoBehaviour
 
     void Update()
     {
-        if(isAttackingTimer.IsCompleted)
+
+        if(isAttackingTimer.IsCompleted) //when attack is over
         {
             isAttacking = false;
-            
+           
         }
 
         if(attackCooldownTimer.IsCompleted)
@@ -96,8 +97,13 @@ public class playerMovement : MonoBehaviour
         if(!isAttacking)
         {
             movement.x = Input.GetAxisRaw("Horizontal");
+            rb.gravityScale = 3.0f;
         }
-        
+        else
+        {
+            rb.gravityScale = 0.0f;
+        }
+
         jumpInput();
         attackInput();
 
