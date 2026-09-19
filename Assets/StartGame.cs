@@ -35,6 +35,7 @@ public class StartGame : MonoBehaviour
     public void StartTheGame()
     {
 
-            SceneManager.LoadScene("mainScene");
+            //SceneManager.LoadScene("mainScene");
+            SceneManager.LoadScene("DialogueScene");//JJR - Testing Integration of my dialogue scenes and Matt's
     }
 }
