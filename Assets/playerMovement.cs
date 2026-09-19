@@ -203,11 +203,19 @@ public class playerMovement : MonoBehaviour
 
         if (attackPending)
         {
-            if(playerNumber == 1)
+            if (playerNumber == 1)
             {
                 anim.SetTrigger("Attack");
             }
-            isAttacking = true;
+            else
+            {
+                if (playerNumber == 2)
+                {
+                    anim.SetTrigger("Attack");
+                }
+            }
+
+                isAttacking = true;
             isAttackingTimer = Time.time + 0.3f;
             
 
