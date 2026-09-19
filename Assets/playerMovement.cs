@@ -18,15 +18,31 @@ public class playerMovement : MonoBehaviour
     private bool canJump;
     private bool jumpPending;
 
-    private bool canAttack;
+
     private bool attackPending;
     private bool isAttacking;
 
+    private int health;
 
-    private MinimalTimer isAttackingTimer;
-    private MinimalTimer attackCooldownTimer;
+
+    private float isAttackingTimer;
+    private float attackCooldown;
 
     private Vector2 attackDirection;
+
+
+    public bool getIsAttacking()
+    {
+        return isAttacking;
+    }
+
+    public int getHealth()
+    {
+        return health;
+    }
+
+
+
 
     void Start()
     {
@@ -35,13 +51,30 @@ public class playerMovement : MonoBehaviour
 
         movement = Vector2.zero;
         rb = GetComponent<Rigidbody2D>();
-        moveSpeed = 3;
+        moveSpeed = 9;
         canJump = true;
-        canAttack = true;
-
-        Debug.Log(gameObject.name + " -> RB: " + rb.GetInstanceID());
 
 
+        health = 3;
+
+        //Debug.Log(gameObject.name + " -> RB: " + rb.GetInstanceID());
+
+
+    }
+
+    public void playerCollide(Collision2D collision)
+    {
+        //find the player object that the "current" player collided with
+        playerMovement otherPlayer =
+        collision.gameObject.GetComponent<playerMovement>();
+
+        if (otherPlayer != null &&
+           !isAttacking &&
+           otherPlayer.getIsAttacking())
+        {
+            health -= 1;
+            Debug.Log("player" + playerNumber + " has " + health + " left");
+        }
     }
 
 
@@ -72,15 +105,15 @@ public class playerMovement : MonoBehaviour
     /// </summary>
     public void attackInput()
     {
-        if ( (Input.GetKeyDown(KeyCode.LeftShift) && playerNumber == 1) || Input.GetKeyDown(KeyCode.Keypad0) && playerNumber == 2)
+        if ( (Input.GetKeyDown(KeyCode.LeftShift) && playerNumber == 1) || (Input.GetKeyDown(KeyCode.Keypad0) && playerNumber == 2) )
         {
             
-            Debug.Log("shift pressed::" + canAttack);
+          
 
-            if (canAttack)
+            if (Time.time >= attackCooldown)
             {
                 attackPending = true;
-                canAttack = false;
+                attackCooldown = Time.time + 2f;
             }
 
         }
@@ -130,26 +163,24 @@ public class playerMovement : MonoBehaviour
     void Update()
     {
 
-        if(isAttackingTimer.IsCompleted) //when attack is over
+        if(Time.time >= isAttackingTimer) //when attack is over
         {
             isAttacking = false;
             
         }
 
-        if(attackCooldownTimer.IsCompleted)
-        {
-            canAttack = true;
-        }
+        
+       
 
         if(!isAttacking)
         {
            // movement.x = horizontalMovement().x; deprecated
            horizontalMovement();
-            rb.gravityScale = 3.0f;
+           // rb.gravityScale = 3.0f;
         }
         else
         {
-            rb.gravityScale = 0.0f;
+           // rb.gravityScale = 0.0f;
         }
 
         jumpInput();
@@ -160,6 +191,8 @@ public class playerMovement : MonoBehaviour
     private void FixedUpdate()
     {
 
+       
+
         if (jumpPending)
         {
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
@@ -169,8 +202,8 @@ public class playerMovement : MonoBehaviour
         if (attackPending)
         {
             isAttacking = true;
-            isAttackingTimer = MinimalTimer.Start(0.4f);
-            attackCooldownTimer = MinimalTimer.Start(2f);
+            isAttackingTimer = Time.time + 0.3f;
+            
 
             attackDirection = GetAttackDirection();
             rb.AddForce(attackDirection * attackForce, ForceMode2D.Impulse);
@@ -179,7 +212,7 @@ public class playerMovement : MonoBehaviour
         }
 
         rb.velocity = new Vector2(
-            isAttacking ? rb.velocity.x : horizontalMovement().x * moveSpeed,
+            isAttacking ? rb.velocity.x : horizontalMovement().x,
             rb.velocity.y
         );
     }
@@ -188,26 +221,19 @@ public class playerMovement : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
+        //check if jump should refrwsh
         if (collision.gameObject.CompareTag("floor"))
         {
             Debug.Log("collision" + canJump);
             canJump = true;
             Debug.Log("collision" + canJump);
         }
+
+        //checks if players are damaged
+        playerCollide(collision);
     }
 
-    /// <summary>
-    /// move to other script?
-    /// </summary>
-    public readonly struct MinimalTimer
-    {
-        public static MinimalTimer Start(float duration) => new(duration);
-        public bool IsCompleted => Time.time >= _triggerTime && _triggerTime != 0;
-
-        private readonly float _triggerTime;
-        private MinimalTimer(float duration) => _triggerTime = Time.time + duration;
-    }
-
+    
     //chooses (2d) vector direction based on player input
     Vector2 GetAttackDirection()
     {
