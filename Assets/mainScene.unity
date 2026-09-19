@@ -238,6 +238,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: player1
       objectReference: {fileID: 0}
+    - target: {fileID: 5228388422612854189, guid: dfc7ce5bbdaf82c40a9540b9750428c6, type: 3}
+      propertyPath: m_TagString
+      value: player1
+      objectReference: {fileID: 0}
     - target: {fileID: 7565598944009118254, guid: dfc7ce5bbdaf82c40a9540b9750428c6, type: 3}
       propertyPath: m_Size.x
       value: 0.44863725
@@ -766,6 +770,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5228388422612854189, guid: dfc7ce5bbdaf82c40a9540b9750428c6, type: 3}
       propertyPath: m_Name
+      value: player2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5228388422612854189, guid: dfc7ce5bbdaf82c40a9540b9750428c6, type: 3}
+      propertyPath: m_TagString
       value: player2
       objectReference: {fileID: 0}
     - target: {fileID: 7565598944009118254, guid: dfc7ce5bbdaf82c40a9540b9750428c6, type: 3}
