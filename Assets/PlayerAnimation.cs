@@ -16,7 +16,7 @@ public class PlayerAnimation : MonoBehaviour
     {
         float x = Input.GetAxisRaw("Horizontal"); // A = -1, D = +1
 
-        anim.SetBool("isRunning", x != 0);
+        anim.SetBool("IsRunning", x != 0);
 
         // Flip to face the direction he's moving
         if (x != 0)
