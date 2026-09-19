@@ -1,0 +1,8043 @@
+fileFormatVersion: 2
+guid: d8c1a58e78f96bf48afc2cfc494db95b
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: kb_light_all_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 403
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7df6af76d1c686849aa36d03a69b5a41
+      internalID: -1653143679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_1
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 402
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f000adf65fa67f04a83809c059a8ecaf
+      internalID: -1848947279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_2
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 403
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce1b0031effa6eb47a094195fda92791
+      internalID: -1409535034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_3
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 402
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64484f6d58c9f1749a7bfd850a031ffd
+      internalID: 1078006734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_4
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 403
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3308987b40ca11a4dae7aeee0ed9e8b6
+      internalID: 209648114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_5
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 402
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b723fe400880374995aeed31ac55fd2
+      internalID: 514259253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_6
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 403
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 705e62e88f29775459acacab07d576de
+      internalID: 596066266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_7
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 402
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 292813863cbbfb941ab966f10047869e
+      internalID: -614302428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_8
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 403
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a24757f1f7c282429736611544b8a25
+      internalID: 1699030802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_9
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 402
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9477460315fd6d740893e98f2178dd0b
+      internalID: 1605305238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_10
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 403
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35293acfae6503e4893fd57009870761
+      internalID: 1583866941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_11
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 402
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 733ef8e69bfef8f4caddaa47aa2b3653
+      internalID: 76425476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_12
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 403
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14401461746e3264098f744f99246d68
+      internalID: -2079222541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_13
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 402
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 136cd787a0cb6aa4c9f616437e5a0302
+      internalID: 1791772876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_14
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 403
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81f4f02a20e9dbc42a594c40fd1670e7
+      internalID: 1193113551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_15
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 402
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14c12e3f4848f034e8a7408f0807a05e
+      internalID: -35105665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_16
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 387
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1a5680e3390bb24c86fa01952c29cf7
+      internalID: 175829436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_17
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 386
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e221b2bc0cbaed04a840a7a8c73c8255
+      internalID: 2112882296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_18
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 387
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a0f5bb8d9882534796b3964684a22f1
+      internalID: 553482311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_19
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 386
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dc4282663a0e8c4b890e9e298cdef2a
+      internalID: 70009031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_20
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 387
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24a0ad72735f1f64eba9887d790ec564
+      internalID: -422309028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_21
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 386
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32ed537b0cfeb174793dadf94de41282
+      internalID: 1485723016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_22
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 387
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33f82301ec1c7c74baf563ec8647e1d2
+      internalID: -1093252290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_23
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 386
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeba2ab8620774b43936755efbb06285
+      internalID: -321728252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_24
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 387
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c6d6fbfd7843314cb9b6f8e7889a385
+      internalID: 2132674157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_25
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 386
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef5b4a3bb1fcc164ebe5121ced3b5e70
+      internalID: -1030860059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_26
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 387
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d93a936388563a4f863d254739ef7bb
+      internalID: -972907752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_27
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 386
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8844a728073c2314c83ca786dc959263
+      internalID: -110318999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_28
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 387
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f24ca04ca2ae5c240abea8ad77bc4093
+      internalID: -1062154778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_29
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 386
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7b769eee5f19f74d95c4e910b29955e
+      internalID: 348156788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_30
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 387
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcbef3c1fb133c24ba4ef9e20801d269
+      internalID: -1251400097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_31
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 386
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2088e37b85d2b6e4ab0bcfe0bda9a86e
+      internalID: -746203717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_32
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 371
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8bbb940a6abca8479170be16a6e3e9f
+      internalID: 464193907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_33
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 370
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4f20e16fc224264181e0593e1a76993
+      internalID: 1834422422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_34
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 371
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9afdac69c507e64397bc30468d06b6e
+      internalID: 419100929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_35
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 370
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d6512738a578094db1494d59e3eb5c8
+      internalID: -1301106784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_36
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 371
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca307cbf6b63528499d0d3b0b1174487
+      internalID: 851875268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_37
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 370
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9235a8c8855349747a54809e1764150a
+      internalID: -1525734521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_38
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 371
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9b0087a4fccebb4182573ef3135ac04
+      internalID: -147880763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_39
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 370
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f69e390c04dee8446a94fe9fa711f409
+      internalID: -747352489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_40
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 371
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9a4a1d934e8ebe4f8cbf4fee2a9003b
+      internalID: -2076039619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_41
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 370
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19303fe98776921408561cb29c56d129
+      internalID: 711716260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_42
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 371
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0fdbeb59e7f79d47b0673a89540f3ab
+      internalID: -957610808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_43
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 370
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 679ee6ce29f104a489e4f6aca7f3518e
+      internalID: 516013550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_44
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 371
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c724bd149ee44e4d8d687f6bb2eecca
+      internalID: -2044984778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_45
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 370
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d18e65592d8eeaf479fe073169d9ddd7
+      internalID: 807059022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_46
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 371
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1b2819dbdec557489008f9d980a9dbb
+      internalID: 1021383680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_47
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 370
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3babcfd2e33f6ff43a02733d1cc091bb
+      internalID: -1365815041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_48
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 355
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab1c59f2c10298d468f6516d35e314fb
+      internalID: 1400134275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_49
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 354
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05eb438fc06375b4dbe8117c4e9b6ca8
+      internalID: 311052537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_50
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 355
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eefa693b101b7b41b624144504cd7e7
+      internalID: 607554054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_51
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 354
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbba10320effc704f97936c51dae5d2c
+      internalID: -1998481831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_52
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 355
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccd9524e7fa8ded4abb252df7ea83a41
+      internalID: -925001482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_53
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 354
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21462adbc072cbd4d848943a9a2cdff7
+      internalID: 1113791726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_54
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 355
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71667327622c1ee439a7a7c095a5a4d0
+      internalID: -812789077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_55
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 354
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a95c0d4a0018dc4b9f64a4f12ae0651
+      internalID: -1797376178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_56
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 355
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 639dbe6dce505844abe4a0e8f6c8f12d
+      internalID: -360623809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_57
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 354
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7223c2abbf812549b7e2636d273f8d6
+      internalID: -60300086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_58
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 355
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88848d7463088ac4ea371d94a13aa9a4
+      internalID: -1126453294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_59
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 354
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ae8888661667784280cbd26c30a0713
+      internalID: -1089783971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_60
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 355
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97cb22cbff8c8a74db6377e5da7b29a7
+      internalID: -763635890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_61
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 354
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ab484d072a56b84d94bda0d0efe42cc
+      internalID: 555437469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_62
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 355
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 079b044605dba9e4f85602c759d6bf82
+      internalID: 1258748982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_63
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 354
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3211abeb652d460449eccbbe836248fd
+      internalID: 1192553101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_64
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 339
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41b5b9b7a3665c547923fb935c850dce
+      internalID: 930458808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_65
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 338
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7495d3bcda84464e9cfabd2f4da0de1
+      internalID: 1769542282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_66
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 339
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eefd977a768900e4cb242ce310b0ac29
+      internalID: 718472716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_67
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 338
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72c87d92580b0b447bca9ae7da0e085c
+      internalID: -1055115728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_68
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 339
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 175163330403dc046b187dbf5daec7c9
+      internalID: 1619736310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_69
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 338
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3681ac5b6073c2a46afb132dfcab17fe
+      internalID: 84411616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_70
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 339
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 611b00472ba950b4591d9042df7a88bf
+      internalID: 571618920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_71
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 338
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 679c703e84687584498df7f01950824a
+      internalID: 456573747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_72
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 339
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01640791e45da574da91902119098a6b
+      internalID: -1585165634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_73
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 338
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0b18b64a4607ee43b76d261adc0dd7a
+      internalID: 462680660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_74
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 339
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb66e11e01e97a246bf6544ce5cc475e
+      internalID: -836059421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_75
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 338
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcb9815bb5e262545a829c34e8361d78
+      internalID: 504796983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_76
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 339
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8371d13655e9ec24e95258d4cfc03207
+      internalID: -390205001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_77
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 338
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeca7fcb28baa50459bebc1d7efe4dfd
+      internalID: -2392938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_78
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 339
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be913ced145d5b04194525b66d92869d
+      internalID: 1594089037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_79
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 338
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 953af28b82eaaea41907945bc72209fd
+      internalID: 1144689156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_80
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 323
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 256b14291b74bb14f84a002f4dfcf0e4
+      internalID: -1602920636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_81
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 322
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bd66ee9617f9af408da9d41224a243e
+      internalID: 689957889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_82
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 323
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d31e8c04e4b0c6c49a4ee53b5adbb8ca
+      internalID: 693419135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_83
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 322
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 198f6e843526ae84094317796805192d
+      internalID: -1990655000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_84
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 323
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb84b8e973bca2044a7289760ce76c1f
+      internalID: 1910241125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_85
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 322
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e86d4f1b935f8d941b22a20ffa3baf3e
+      internalID: -1659077403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_86
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 323
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f962216f360840d4b9d3cf5fb7e0048a
+      internalID: -368397228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_87
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 322
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a36cdfe4f6802f46a216f1ec6d33542
+      internalID: -97676548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_88
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 323
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d63d7a572dd1d347bb07cda2371c170
+      internalID: -1783027557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_89
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 322
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc0797930780d554eab3e7c0e9c37172
+      internalID: 113902823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_90
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 323
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6af75cb927b85824f8c5c99dfcb14932
+      internalID: 1740874184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_91
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 322
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c1eb6d98dabb9e45821e475907650b1
+      internalID: -1982637588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_92
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 323
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4d7e4d782b7ab64097a511f046fb009
+      internalID: 1619456670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_93
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 322
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 166850998fe6ec84485b5e39513c9e8c
+      internalID: -1530015740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_94
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 323
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 559ce1c1e957f56409d03d20739a72fa
+      internalID: -1910793664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_95
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 322
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35696062801caa94aa68caec30178855
+      internalID: -1388464314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_96
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 307
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69d60e038478d094faed9961fc3f3b70
+      internalID: 1424501234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_97
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 306
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b54a043cdd1c5c0488ac4ef60d422f43
+      internalID: -1830229510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_98
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 307
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dfddba944b2a1545ad509ee4bd3ce94
+      internalID: 850328830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_99
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 306
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d3c1110629f84342bdc822c6d6002c4
+      internalID: -772776460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_100
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 307
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 062af9372b6b2bc468b8070e000163b1
+      internalID: 1583113916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_101
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 306
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e40829e7cc0c9b4dad5bb469022922e
+      internalID: 62199552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_102
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 307
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a669aa2ae7eb3f4287b398893796c00
+      internalID: 172226960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_103
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 306
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20d54c50e46bf404ab15e212e000e40f
+      internalID: -309011736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_104
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 307
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6e7dd3b03a61314d91410e2b609a3ab
+      internalID: 48574880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_105
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 306
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c74326457ec3567489252b5ce15f0440
+      internalID: 890349525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_106
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 307
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a7d773468bd54446bffd261efdb23b2
+      internalID: 882708957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_107
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 306
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18008f21e527537408526faad5327324
+      internalID: 30925590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_108
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 307
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd24a5cac37d8964bb84da4942d80a97
+      internalID: -1863557738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_109
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 306
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41fc7c2caff4f534fa19157763385017
+      internalID: 662739715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_110
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 307
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b674a2cef265fc43810b886464045c2
+      internalID: -20770465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_111
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 306
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2034b1730835c1243877122d850c09c2
+      internalID: -1914826299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_112
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 291
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7edf5e1b2549a1448aac2168e179f404
+      internalID: 1481750471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_113
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 290
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa0e5c0242de28c498ebc841e811dc57
+      internalID: 1128300693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_114
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 291
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97d76118b6d90e348bd049cc363b11b1
+      internalID: -72804587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_115
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 290
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a70d6f0572a38944f970e67a881d6c78
+      internalID: -1333329858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_116
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 291
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 742e2324d3b098a4e9e69f02ea2bb395
+      internalID: 349577758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_117
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 290
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02b884df75346db4580b77579ec70dae
+      internalID: -753891617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_118
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 291
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85a4e2625eaf4a54e9b773dbb229c97c
+      internalID: 1177193488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_119
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 290
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb93e079a4a06b84abe2c294606beb70
+      internalID: 77727368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_120
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 291
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f90d53447c66b748b3b8c0f44f6be4d
+      internalID: -47820276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_121
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 290
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee325e21cea6edf4bb463c87a9448654
+      internalID: 103220847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_122
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 291
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c957381bc8b8314eb89a1cac63fd0fd
+      internalID: 959275996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_123
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 290
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76562a94b23134f4da838999217ca44a
+      internalID: -1866294965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_124
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 291
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d651754a7d53ae14fa3b3463e56323ef
+      internalID: 816989963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_125
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 290
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19a237ad9f55bb14b8fd2aac8f272c07
+      internalID: -1655857493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_126
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 291
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ead370772f7503488e761b9d7398aa1
+      internalID: 1584447524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_127
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 290
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ab5b22d59dc5284781d2e8e313822e4
+      internalID: 204122970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_128
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 275
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e66e86c3e5776a64ca4ebabec0fb5ebb
+      internalID: -1187603784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_129
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 274
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: accb2202779c45648be1d75e0f6660bf
+      internalID: 1464623749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_130
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 275
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2566d0538ccc67047bcd49b2a87cdd53
+      internalID: 209268579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_131
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 274
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cead3c1b24e242e4eaaaca01f43e6696
+      internalID: 1489764903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_132
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 275
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7091ccc94e9e3284a8199350695a5388
+      internalID: -113230861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_133
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 274
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48f5580c3cd675f429b04a7808674671
+      internalID: -736891579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_134
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 275
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 267d1a33e6ec68f43a231ad3df0e174e
+      internalID: -1542687866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_135
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 274
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bc4d04c71bbc7e4a9e92540d90d3b6c
+      internalID: -503337565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_136
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 275
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b60b60c131a1e0145824c187db91a732
+      internalID: 848009608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_137
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 274
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 701bec2b6dad6c24fbdb7004c081949d
+      internalID: -1345650542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_138
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 275
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50cc5a4e8e388724e9243e19e0826e03
+      internalID: 1183834625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_139
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 274
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03b48ff2e7860c84ea1ba21f2a174d73
+      internalID: 1510792602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_140
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 275
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a0720bc7b135ee4896bb147af1cd3f1
+      internalID: -46713239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_141
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 274
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff2d1ce2c885f2044ac66dde93388e26
+      internalID: 1100768850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_142
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 275
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f883094e7ee2d704892c8eb32547040c
+      internalID: -937112178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_143
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 274
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fc3ecbf2a7eafc488508b711463d632
+      internalID: 1477277752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_144
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 259
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96a600eb435e44b4bae437251075c77f
+      internalID: -258010993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_145
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 258
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15fbc8197fa14844da43fa645b24a539
+      internalID: 674711990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_146
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 259
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa185dd55030c8c4689793bc507ce589
+      internalID: -1110031652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_147
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 258
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75d5cc18ee65dd447aa0850f899d2b6c
+      internalID: -401005130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_148
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 259
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5acee566ad51814d843387ae87ccc4f
+      internalID: -1014427640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_149
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 258
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4034fd5dafb8a014eb4378af3804ba36
+      internalID: 1574468523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_150
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 259
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59a36e317a9baac4090418c412fb65eb
+      internalID: -348012297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_151
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 258
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d3d5119a59cb8d46a59d50b4565e26e
+      internalID: 391745829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_152
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 259
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5bbdc53bb650244b94508a46f61c2bc
+      internalID: -880523909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_153
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 258
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7793daa7081928c4b9af45437c8bbc38
+      internalID: -321066941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_154
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 259
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 089573488fa836849a4a7c914d9a7038
+      internalID: 38596777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_155
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 258
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59630077eaec6034ca25a2eb71ac9dc7
+      internalID: 913522052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_156
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 259
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b56ad76160f27ab40833b8ab63e4f66f
+      internalID: 1184742967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_157
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 258
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5ea5e4a7b8f2724d9c214a5ca2dc7a4
+      internalID: 600185334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_158
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 259
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 576bbc6bbd6b35b4c8de885e09c785c6
+      internalID: 1704531142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_159
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 258
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d185a7de78ddac14ea722fd9884ad341
+      internalID: -306438752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_160
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 243
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45c48c9d6d9505f4bb2d397f9079c647
+      internalID: 352055316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_161
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 242
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7b29beca0df21044bc02c780a65eca5
+      internalID: 38220424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_162
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 243
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 620f559c2490e4647bcf972f43efce68
+      internalID: 550888507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_163
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 242
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2d9f9b18a5778b4988514aa0a337e22
+      internalID: -647178449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_164
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 243
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9eb29ea8e3d2c247b261bc8e337b719
+      internalID: 1356724799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_165
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 242
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d736b07bb7cf0ad43b93a4e3a888dcb9
+      internalID: -2086974721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_166
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 243
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b82f5bbd4e5b5eb47a12dd29108d8447
+      internalID: -204009559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_167
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 242
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93c52bb75690a6043a9905b44e5fba8f
+      internalID: 263919907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_168
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 243
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b334d94320fca37489af77c11b2c3d47
+      internalID: -639928708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_169
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 242
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f0bdfb59b3c0ab41855603928438db0
+      internalID: 1835825382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_170
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 243
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 754b9273511e05845a8f1b20c6904bc3
+      internalID: 1289096843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_171
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 242
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22574813b545fa64395078d093948dd3
+      internalID: 27158111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_172
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 244
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 780128d7886683241bbfdcd2e1c539fe
+      internalID: 1888471248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_173
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 243
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83cc7ac73193ee240b0b417bda23afdc
+      internalID: 1074486110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_174
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 244
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cab64b3a889993a498b24219621ae2c9
+      internalID: 2013038063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_175
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 243
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 268af0358e890db4eabf55a8b0cc2f1b
+      internalID: -906633601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_176
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 227
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef189f691c9afa648b273526b805ac81
+      internalID: 1728575468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_177
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 226
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef5963a78dfed8d409f8003a9e2e8b91
+      internalID: 18744023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_178
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 227
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d04ab6549e5b1b748b69bcae11e03084
+      internalID: -1059090423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_179
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 226
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca09956299167e34a9a47507e714f6c8
+      internalID: 207457857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_180
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 227
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ddd2b50b97baad4b8a7c5f867fb4ab6
+      internalID: -595179326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_181
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 226
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dcf8ead185de3d4db1536e0a98fbe73
+      internalID: -1939132816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_182
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 227
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cb7af712767bd94294480be067090c9
+      internalID: 82556632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_183
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 226
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6005f99c8037338438e8969d43138ee8
+      internalID: -704617187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_184
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 227
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eef906796de4e644cb23a3f2b12b3a5c
+      internalID: 4454231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_185
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 226
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eff49c338e0de9e4eac659f13992281e
+      internalID: 26003371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_186
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 227
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2efab9f04545c25498cb0dbf65fad442
+      internalID: -777698683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_187
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 226
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd4bb14eedcd729499f465e68452889e
+      internalID: 1027069823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_188
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 228
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3401381e7ac52a246b914c374a00eaed
+      internalID: -2102932262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_189
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 227
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e5c77f58ba8b3a4aa50a15abc0284ed
+      internalID: -569425255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_190
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 228
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95e93b9ae9bb60d4db4c8aed0f1fdb5d
+      internalID: 1470794890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_191
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 227
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45ffa2a65aba3d8458787f2df43f1717
+      internalID: 1858564359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_192
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 211
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 620b9ed5f7bbe2f4f8cc62f2091c24ea
+      internalID: 1498447290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_193
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 210
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3132c033bfc7a144a903808c587b6748
+      internalID: -206091445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_194
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 211
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b54c4a9e85a72048aae1e644226ac5d
+      internalID: 1875666683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_195
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 210
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83db52b239ab16f4693d4c3809c641c7
+      internalID: -1092353515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_196
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 211
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 667115603f4be134a8f9a5d34584139c
+      internalID: -1498810557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_197
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 210
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46ec0c33a7a06d34ebccbc6d17cbd28c
+      internalID: -1174436999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_198
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 211
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d33987df82688624e831024560b8ab99
+      internalID: 1077117393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_199
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 210
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 538eb44c98383e24ea1fbfdd4b7e8096
+      internalID: -1299016758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_200
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 211
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d550de811dbb3524d897b9aa0a73c501
+      internalID: 1751116961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_201
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 210
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46df324f59397f344892e1a98dea31ee
+      internalID: 505796781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_202
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 211
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9860d2df568fdbd41afb0bffb7c438be
+      internalID: 1776061510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_203
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 210
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8092961f9790990478d592bc0bf43cbf
+      internalID: 1166248610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_204
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 211
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4da03b658aca67e4f931477ab7b6f044
+      internalID: 808977788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_205
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 210
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b128fbe9328e3f844af35170e9010e67
+      internalID: 1251619798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_206
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 211
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 556546e6ed99da24c86e49beba968d5a
+      internalID: -2069717080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_207
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 210
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b59e2173deeac0b479a170c7ea1dbc10
+      internalID: -1383048681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_208
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 195
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5c09220fc60b2844a76903e288f7321
+      internalID: 1996743711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_209
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 194
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3fd0c3ea2bd916439e04a1de46e7eb3
+      internalID: 1795128852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_210
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 195
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 544ee059ee88c324db604e43f083f740
+      internalID: -1277274743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_211
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 194
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f0e8515c3725f1429185664be0d70ed
+      internalID: -513372835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_212
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 195
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a3fc291565ca3a4688b3c64e0963cbf
+      internalID: -1359157884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_213
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 194
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6529d2e8868f4a2488d730e7846e4d37
+      internalID: -138896138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_214
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 195
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adf18d7a41516724c8b46e1b6cd3fbf6
+      internalID: -1600566500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_215
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 194
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 385e90667d86d2446bf6369940c4f7a3
+      internalID: 1399170762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_216
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 195
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dbe3a69ec585c544b9cca553b75f8ab
+      internalID: 1312415281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_217
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 194
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 092b6b9c83cfc33449c090f33504c846
+      internalID: 1233861503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_218
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 195
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8998800a5b5fa0943b2dd9ca80365e7b
+      internalID: -1459119398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_219
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 194
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b1804c4f218fdd47b26d51e6c567229
+      internalID: 929561546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_220
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 195
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 941dd029b025f1849bc28baf5e76c6e3
+      internalID: -526880394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_221
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 194
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9396d9445c0ad604fbf1fdd63e3e0b3b
+      internalID: 896696176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_222
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 195
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4969d6dd1df57ff4bbcc606b04ee887d
+      internalID: -85801694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_223
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 194
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e64ef2a50f61bb498e14f024ec4280c
+      internalID: -187247341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_224
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 179
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9c718b7c2cb53046bddaa7be9f1c813
+      internalID: -1899732594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_225
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 178
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15ba6705e44773d4482e0525cc2f2281
+      internalID: 1048919131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_226
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 179
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9966669200903a4499010b173b18d01
+      internalID: 283440130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_227
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 178
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 028d6417f9fcc9c40868e081e7794c6a
+      internalID: 1596216169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_228
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 179
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e892e2437b9700e4abe70d1c7909b246
+      internalID: 1125286236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_229
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 178
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b979dc3302baef46be82c0edb9191d1
+      internalID: -412789040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_230
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 179
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 965560b775190ff4aa4513189c8cf83f
+      internalID: -39567943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_231
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 178
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7d9828e400e846449f716f172db4ab7
+      internalID: 1316129285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_232
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 179
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c2d868e9bd9fe74ab1a7a5694d8a235
+      internalID: -106369932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_233
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 178
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cce465ff7c4d9db48a83faa507479f85
+      internalID: -1597859461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_234
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 179
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39742ac55c0a43d4b97692e201dd685c
+      internalID: -65526963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_235
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 178
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed64c6b0295f66240b5c8f5765f22e7a
+      internalID: 1818282674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_236
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 179
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c80d97759fb59e94683d3f95433f779a
+      internalID: -1658922033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_237
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 178
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54449e406e7c4ad4dbc3f9cfcd223f09
+      internalID: 1271147282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_238
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 179
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17da6574e65111a49abac06c9022ae84
+      internalID: -995603825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_239
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 178
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88fa6d63f38d4144599c08302877dd81
+      internalID: 196537188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_240
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 163
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52ac76308f1b5de4cbad79284f99511f
+      internalID: 1438182097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_241
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 162
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b887b9c9493e13941803fb4494651a56
+      internalID: -1426271089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_242
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 163
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a3783a0d3e57eb4b8556f9a84f5cf15
+      internalID: -1463737811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_243
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 162
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77cb856962f6e6c458e0504c9961ac5a
+      internalID: -1412695099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_244
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 163
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d16795e1463162448c44d64adfc6f7b
+      internalID: -119806232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_245
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 162
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dc646f6ec2561640bb14a08fa7dd29c
+      internalID: 559766565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_246
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 163
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69e016b775f2257468002009e6b8b843
+      internalID: -1255475079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_247
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 162
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 601144ae74054aa4897609926c78adcc
+      internalID: 1408688847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_248
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 163
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 557a0ed69a578b3499b4a48ed93289fa
+      internalID: 920928656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_249
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 162
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3891f974cb01c948be59d8f83997a41
+      internalID: 934128181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_250
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 163
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f739000099353e48b96840e9e4274a0
+      internalID: -1871529444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_251
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 162
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1ad679fb904e31458b4e5c6fcae4f8c
+      internalID: -2042368321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_252
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 163
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22e2cb4903225be4d8ce4f72c0bc8de2
+      internalID: 1115106511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_253
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 162
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06444274cad6ce545a67eaefafa88908
+      internalID: -1150152353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_254
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 163
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccb611499db25594393b6787e563fa30
+      internalID: -1214437132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_255
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 162
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 081e1e06c836c724cb0a6bad542ca8d4
+      internalID: -1798600219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_256
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 147
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e67e97d8b91269e4daca186980cc7ab5
+      internalID: -90116932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_257
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 146
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d167b19def75de74baf7dd5d440b26cd
+      internalID: 1732848116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_258
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 147
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8b8a328288faf744bc1bf285abbbdb4
+      internalID: -1401066630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_259
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 146
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54e28f266cf3e5749b272074241d4b5d
+      internalID: -2050511368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_260
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 147
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80066a6dc603a9949bf64a458ae83b07
+      internalID: 336960769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_261
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 146
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f6953d3c6cf570469fbf585b125af7c
+      internalID: 1993033559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_262
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 147
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c55f59f6e625cec4492edfd4f61f0336
+      internalID: 640340633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_263
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 146
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86749025ae065714dafc9a9bb5952864
+      internalID: -744232080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_264
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 147
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1508c624b2556824e97c4ef6e388a68a
+      internalID: -386133730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_265
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 146
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e123ca475f57534d95e6dc1e8472da7
+      internalID: -650412445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_266
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 147
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8438883e9d6516b468e6fae93ad68cd7
+      internalID: -1442200740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_267
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 146
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97df0d7d7b3d1ab42af10c16b1e73708
+      internalID: 764541619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_268
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 131
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65f2c46d261cf524da73d5672cb570e0
+      internalID: 822845807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_269
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 130
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0caee4a8875d24a45b117481b8b332f1
+      internalID: -260374014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_270
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 131
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7c26c936ece3aa4fb627354cc690227
+      internalID: -2109571275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_271
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 130
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee4fc1338ddf03b4a884fbb39691eeda
+      internalID: -79179611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_272
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 131
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eacce22a878b87249ac83b3c757ff567
+      internalID: 1468188068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_273
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 130
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e8333589ca196f49959636568af6b9b
+      internalID: -1813080516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_274
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 131
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c34a55a3681afa74fad3a641cf936e99
+      internalID: -1139912011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_275
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 130
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7ae604f241e0184bbe5859abcb4da95
+      internalID: 1479094724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_276
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 131
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdde94f19ba14d34ea63af07e585e088
+      internalID: 1468720642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_277
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 130
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6010feb97e55ed74da013db8c13b9145
+      internalID: 735397188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_278
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 131
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2ee8727ce049ad4ca118dcd024c4018
+      internalID: -319400654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_279
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 130
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62ea8e0bdcc472e4c8a496490376bddd
+      internalID: -396057089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_280
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 115
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3df17613152930a4e96ee45b602c99e1
+      internalID: 1623487222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_281
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 114
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fd46a0383593124285951799c8db16e
+      internalID: -795879208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_282
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 115
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e19ef58972ae14e43b9ee90493a5aace
+      internalID: -23268417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_283
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 114
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84dc896f15bf149468c2b7c3c66cae32
+      internalID: 1145920427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_284
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 115
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9c58f7a3259da44e86f446a5f04252b
+      internalID: 1555114649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_285
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 114
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 887bae4cde11e444ea4238106fa1b8dc
+      internalID: -498688555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_286
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 115
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa76519044099fb45b3819970c9acaca
+      internalID: -623510753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_287
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 114
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 073a54dd4ad3ad04e86a624aa4a8f86b
+      internalID: -730813880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_288
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 115
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30dd7fb7d650d6c40912bff29d966255
+      internalID: 871980147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_289
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 114
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 817c40c1d30e4cb42b8c0550f71459e5
+      internalID: 1045468200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_290
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 115
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3264be4e3cef79438969405b45bd768
+      internalID: -1388017581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_291
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 114
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b9a94fd09cff804e8c17d3fe2cee923
+      internalID: -712231703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_292
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 99
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92444278895b02e41a84283c8beb8d7d
+      internalID: -266778032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_293
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 98
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dea71222abacf8428927d66e0aae500
+      internalID: 443118559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_294
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 99
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a6924b81880ef94a877e52027a482c9
+      internalID: 936733671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_295
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 98
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6de905c317699154c94bcb21eea735a6
+      internalID: 1741122461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_296
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 99
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15e3c763349456146b16bbd6fe9ae284
+      internalID: -1269941537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_297
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 98
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9580d219378634b44872e6570c7c9585
+      internalID: 1750001650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_298
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 99
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d33a70f7a831d9d44a5e52981f9a473f
+      internalID: -840252218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_299
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 98
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5eccb66fef8ad548989a672e547c821
+      internalID: -582905648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_300
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 99
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c089b785861c9b4198f8efae7519188
+      internalID: -1358791688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_301
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 98
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f86444c9b5a8ffd448252b39d2d9c19b
+      internalID: 1534050849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_302
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 99
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a70ea00e00ba19945802f48ebdd8b251
+      internalID: -1147614312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_303
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 98
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f9f10835f9dc1f449a737f80264c90d
+      internalID: -1477811201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_304
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 83
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08c374956ebff4e489828fd300283016
+      internalID: -2004714690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_305
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 82
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0f02103e30c8c94aa07d0dcd1aa5057
+      internalID: -1324056243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_306
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 83
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4def71122e012441bcc8146a187eee4
+      internalID: -348215189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_307
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 82
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e0860f43363bbb4ebed483efdd071e3
+      internalID: 707818794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_308
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 83
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09f14b9458b5b4c48a841e4612c67c8a
+      internalID: -22855420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_309
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 82
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3991a1457e3d30f4798563f4bcf81c7c
+      internalID: 1160625872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_310
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 83
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4ac46055437201469cee3271537da72
+      internalID: -15531162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_311
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 82
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d20dbed731865c44be5c5243a459d7f
+      internalID: 1927130186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_312
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 83
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba3f95215ead3e94899d49fc3c089820
+      internalID: -701424431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_313
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 82
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60d51b615dcfd3540af59a4973e0efa5
+      internalID: 983649860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_314
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 83
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 185a5f7941ad2384094751d5f3a5cfe8
+      internalID: 1532371694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_315
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 82
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92ec3a1b706123f4db13c21f8da2d0e6
+      internalID: 1637560243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_316
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 67
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61b1689ce937d3f48bd0dd3e983b5fbf
+      internalID: 375618641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_317
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 66
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b835e7b4750fcd4a8ae89e6f692a2eb
+      internalID: 697734788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_318
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 67
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6167d22279365184896ad755ad89fe5d
+      internalID: -846335917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_319
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 66
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e64d707895762874dac6b125b416b42c
+      internalID: -1208877411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_320
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 67
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dc32a180e74c2b468c82fe66d66af69
+      internalID: -439162363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_321
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 66
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58dbdee9be94c534a8b96f7f88877d6a
+      internalID: 1922413696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_322
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 67
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e89dbfad4af470d49a5c340b7a9e95b1
+      internalID: -1046450496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_323
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 66
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6b0266cccefb4540a4be69dc93ae8a8
+      internalID: 1708637068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_324
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 67
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76b8a6b60bc680a43803c4f6944a8e03
+      internalID: -1057924011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_325
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 66
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11395c91f24057b4db4d656fd1958d5a
+      internalID: -2009427818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_326
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 67
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7541583b19e9e01499d2ee8cee72637f
+      internalID: 1001923265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_327
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 66
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 433f8eef9b5df03469b37339d7b2667f
+      internalID: 980172382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_328
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 51
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62bb3541660a8af4ba90ed2f4aee7b12
+      internalID: 1571291971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_329
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 50
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 010be329d7df3634681ac9e7bbe7f63d
+      internalID: -212560968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_330
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 51
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72b239c16aa450d449b0acf316e780c0
+      internalID: -1979853912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_331
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 50
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c613d3c7df3be69448181548687044e0
+      internalID: -4843021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_332
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 51
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bdd379efd9543d4e89c45dcd539924f
+      internalID: -306974625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_333
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 50
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77c7f1bed6fd76a4d9b79ec86e80f51b
+      internalID: -970690575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_334
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 51
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f403e9cefb7b93f4bb0e119cd9e7d894
+      internalID: 2098292566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_335
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 50
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 189e9d3c244227144a64b1172ee3ff5d
+      internalID: -623853671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_336
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 35
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a4168a926e8ee84e8a3d9075dce1505
+      internalID: -1638526784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_337
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 34
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bf65021c93af804aad973e9dcf1c4e9
+      internalID: 180680071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_338
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 35
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 580008aa672e98d409149211e2f83c41
+      internalID: -1798280015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_339
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 34
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc72f4613e2f2d147b7b23d01fc4616c
+      internalID: -1591554880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_340
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 35
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92198828de7cab44289ab3a14cfa976a
+      internalID: -1396920042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_341
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 34
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b8e8895e69fb7f449ae2c9230438010
+      internalID: -145960829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_342
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 35
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f565aea698939d448b1066286c7ccfa
+      internalID: -1026881824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_343
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 34
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3bb6c5ef494f5643917013b441a4887
+      internalID: -1459058272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_344
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 19
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7d98211d87cd0c4a9bee408e447d3cb
+      internalID: 131254363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_345
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 18
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1842c6b118ee6514fab3d96bbdd29a1f
+      internalID: 109305932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_346
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 19
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f79c22bac259654a908295c7b14d114
+      internalID: 1064417490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_347
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 18
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb485876acf383247a048ae4ce278021
+      internalID: -505261703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_348
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 17
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 247d1db6038c40146a9f7cdcbf4c4427
+      internalID: -296305905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_349
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 16
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19f03882f084cde4b82f524e34e56d37
+      internalID: 34873198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_350
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 17
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e16d4ac03911d64fb7c7dbc4bdd12a9
+      internalID: -1074324016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_351
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 16
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbb9201bd6f954341a3d8928d971de33
+      internalID: 156250012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_352
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 3
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a408497471c65e4b804af4b79c81990
+      internalID: 1546500942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_353
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 2
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 960b9c1055f32c545b2590fa39d74d66
+      internalID: 518846114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_354
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 3
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd42d2f4badbce748a89013e879779b9
+      internalID: 2024544431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_355
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 2
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf0134a8d62c5474f8216bb61d4a3935
+      internalID: -1284115664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_356
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 3
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01a31d4201de508418e61938fa9c2669
+      internalID: 1397567330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_357
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 2
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca2ccda07af64364d9d4a9a412479cff
+      internalID: 543630203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_358
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 3
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2779052160ab9514ebea255b53d5e2d6
+      internalID: -1769577393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kb_light_all_359
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 2
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aa805cfc6194594a8da625dfb0d3564
+      internalID: -1062369518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      kb_light_all_311: 1927130186
+      kb_light_all_205: 1251619798
+      kb_light_all_326: 1001923265
+      kb_light_all_124: 816989963
+      kb_light_all_180: -595179326
+      kb_light_all_319: -1208877411
+      kb_light_all_285: -498688555
+      kb_light_all_36: 851875268
+      kb_light_all_244: -119806232
+      kb_light_all_239: 196537188
+      kb_light_all_345: 109305932
+      kb_light_all_232: -106369932
+      kb_light_all_283: 1145920427
+      kb_light_all_167: 263919907
+      kb_light_all_6: 596066266
+      kb_light_all_76: -390205001
+      kb_light_all_212: -1359157884
+      kb_light_all_214: -1600566500
+      kb_light_all_290: -1388017581
+      kb_light_all_207: -1383048681
+      kb_light_all_357: 543630203
+      kb_light_all_335: -623853671
+      kb_light_all_352: 1546500942
+      kb_light_all_347: -505261703
+      kb_light_all_27: -110318999
+      kb_light_all_248: 920928656
+      kb_light_all_255: -1798600219
+      kb_light_all_71: 456573747
+      kb_light_all_52: -925001482
+      kb_light_all_265: -650412445
+      kb_light_all_9: 1605305238
+      kb_light_all_45: 807059022
+      kb_light_all_270: -2109571275
+      kb_light_all_203: 1166248610
+      kb_light_all_241: -1426271089
+      kb_light_all_178: -1059090423
+      kb_light_all_44: -2044984778
+      kb_light_all_120: -47820276
+      kb_light_all_17: 2112882296
+      kb_light_all_86: -368397228
+      kb_light_all_227: 1596216169
+      kb_light_all_80: -1602920636
+      kb_light_all_47: -1365815041
+      kb_light_all_174: 2013038063
+      kb_light_all_330: -1979853912
+      kb_light_all_186: -777698683
+      kb_light_all_116: 349577758
+      kb_light_all_230: -39567943
+      kb_light_all_133: -736891579
+      kb_light_all_97: -1830229510
+      kb_light_all_153: -321066941
+      kb_light_all_279: -396057089
+      kb_light_all_10: 1583866941
+      kb_light_all_238: -995603825
+      kb_light_all_121: 103220847
+      kb_light_all_254: -1214437132
+      kb_light_all_201: 505796781
+      kb_light_all_81: 689957889
+      kb_light_all_226: 283440130
+      kb_light_all_292: -266778032
+      kb_light_all_163: -647178449
+      kb_light_all_191: 1858564359
+      kb_light_all_155: 913522052
+      kb_light_all_294: 936733671
+      kb_light_all_148: -1014427640
+      kb_light_all_332: -306974625
+      kb_light_all_275: 1479094724
+      kb_light_all_177: 18744023
+      kb_light_all_127: 204122970
+      kb_light_all_305: -1324056243
+      kb_light_all_95: -1388464314
+      kb_light_all_179: 207457857
+      kb_light_all_313: 983649860
+      kb_light_all_223: -187247341
+      kb_light_all_324: -1057924011
+      kb_light_all_282: -23268417
+      kb_light_all_323: 1708637068
+      kb_light_all_192: 1498447290
+      kb_light_all_331: -4843021
+      kb_light_all_257: 1732848116
+      kb_light_all_125: -1655857493
+      kb_light_all_145: 674711990
+      kb_light_all_333: -970690575
+      kb_light_all_228: 1125286236
+      kb_light_all_340: -1396920042
+      kb_light_all_35: -1301106784
+      kb_light_all_322: -1046450496
+      kb_light_all_77: -2392938
+      kb_light_all_256: -90116932
+      kb_light_all_210: -1277274743
+      kb_light_all_166: -204009559
+      kb_light_all_123: -1866294965
+      kb_light_all_137: -1345650542
+      kb_light_all_293: 443118559
+      kb_light_all_56: -360623809
+      kb_light_all_50: 607554054
+      kb_light_all_54: -812789077
+      kb_light_all_272: 1468188068
+      kb_light_all_288: 871980147
+      kb_light_all_193: -206091445
+      kb_light_all_142: -937112178
+      kb_light_all_0: -1653143679
+      kb_light_all_245: 559766565
+      kb_light_all_70: 571618920
+      kb_light_all_106: 882708957
+      kb_light_all_13: 1791772876
+      kb_light_all_209: 1795128852
+      kb_light_all_29: 348156788
+      kb_light_all_195: -1092353515
+      kb_light_all_188: -2102932262
+      kb_light_all_160: 352055316
+      kb_light_all_353: 518846114
+      kb_light_all_289: 1045468200
+      kb_light_all_196: -1498810557
+      kb_light_all_206: -2069717080
+      kb_light_all_159: -306438752
+      kb_light_all_3: 1078006734
+      kb_light_all_84: 1910241125
+      kb_light_all_139: 1510792602
+      kb_light_all_261: 1993033559
+      kb_light_all_302: -1147614312
+      kb_light_all_75: 504796983
+      kb_light_all_158: 1704531142
+      kb_light_all_128: -1187603784
+      kb_light_all_252: 1115106511
+      kb_light_all_217: 1233861503
+      kb_light_all_51: -1998481831
+      kb_light_all_144: -258010993
+      kb_light_all_200: 1751116961
+      kb_light_all_308: -22855420
+      kb_light_all_146: -1110031652
+      kb_light_all_350: -1074324016
+      kb_light_all_187: 1027069823
+      kb_light_all_354: 2024544431
+      kb_light_all_213: -138896138
+      kb_light_all_349: 34873198
+      kb_light_all_171: 27158111
+      kb_light_all_134: -1542687866
+      kb_light_all_253: -1150152353
+      kb_light_all_33: 1834422422
+      kb_light_all_157: 600185334
+      kb_light_all_278: -319400654
+      kb_light_all_143: 1477277752
+      kb_light_all_107: 30925590
+      kb_light_all_14: 1193113551
+      kb_light_all_72: -1585165634
+      kb_light_all_298: -840252218
+      kb_light_all_152: -880523909
+      kb_light_all_233: -1597859461
+      kb_light_all_218: -1459119398
+      kb_light_all_172: 1888471248
+      kb_light_all_173: 1074486110
+      kb_light_all_151: 391745829
+      kb_light_all_338: -1798280015
+      kb_light_all_306: -348215189
+      kb_light_all_65: 1769542282
+      kb_light_all_8: 1699030802
+      kb_light_all_5: 514259253
+      kb_light_all_164: 1356724799
+      kb_light_all_31: -746203717
+      kb_light_all_100: 1583113916
+      kb_light_all_112: 1481750471
+      kb_light_all_156: 1184742967
+      kb_light_all_344: 131254363
+      kb_light_all_110: -20770465
+      kb_light_all_141: 1100768850
+      kb_light_all_85: -1659077403
+      kb_light_all_136: 848009608
+      kb_light_all_131: 1489764903
+      kb_light_all_277: 735397188
+      kb_light_all_202: 1776061510
+      kb_light_all_211: -513372835
+      kb_light_all_108: -1863557738
+      kb_light_all_328: 1571291971
+      kb_light_all_102: 172226960
+      kb_light_all_162: 550888507
+      kb_light_all_24: 2132674157
+      kb_light_all_63: 1192553101
+      kb_light_all_190: 1470794890
+      kb_light_all_122: 959275996
+      kb_light_all_235: 1818282674
+      kb_light_all_229: -412789040
+      kb_light_all_189: -569425255
+      kb_light_all_291: -712231703
+      kb_light_all_1: -1848947279
+      kb_light_all_312: -701424431
+      kb_light_all_325: -2009427818
+      kb_light_all_359: -1062369518
+      kb_light_all_83: -1990655000
+      kb_light_all_287: -730813880
+      kb_light_all_19: 70009031
+      kb_light_all_216: 1312415281
+      kb_light_all_355: -1284115664
+      kb_light_all_317: 697734788
+      kb_light_all_91: -1982637588
+      kb_light_all_316: 375618641
+      kb_light_all_259: -2050511368
+      kb_light_all_307: 707818794
+      kb_light_all_28: -1062154778
+      kb_light_all_2: -1409535034
+      kb_light_all_273: -1813080516
+      kb_light_all_99: -772776460
+      kb_light_all_58: -1126453294
+      kb_light_all_267: 764541619
+      kb_light_all_73: 462680660
+      kb_light_all_274: -1139912011
+      kb_light_all_74: -836059421
+      kb_light_all_169: 1835825382
+      kb_light_all_101: 62199552
+      kb_light_all_25: -1030860059
+      kb_light_all_18: 553482311
+      kb_light_all_61: 555437469
+      kb_light_all_64: 930458808
+      kb_light_all_343: -1459058272
+      kb_light_all_161: 38220424
+      kb_light_all_320: -439162363
+      kb_light_all_16: 175829436
+      kb_light_all_220: -526880394
+      kb_light_all_224: -1899732594
+      kb_light_all_266: -1442200740
+      kb_light_all_119: 77727368
+      kb_light_all_341: -145960829
+      kb_light_all_20: -422309028
+      kb_light_all_132: -113230861
+      kb_light_all_115: -1333329858
+      kb_light_all_304: -2004714690
+      kb_light_all_82: 693419135
+      kb_light_all_337: 180680071
+      kb_light_all_38: -147880763
+      kb_light_all_48: 1400134275
+      kb_light_all_40: -2076039619
+      kb_light_all_53: 1113791726
+      kb_light_all_242: -1463737811
+      kb_light_all_140: -46713239
+      kb_light_all_93: -1530015740
+      kb_light_all_147: -401005130
+      kb_light_all_117: -753891617
+      kb_light_all_296: -1269941537
+      kb_light_all_184: 4454231
+      kb_light_all_67: -1055115728
+      kb_light_all_181: -1939132816
+      kb_light_all_271: -79179611
+      kb_light_all_87: -97676548
+      kb_light_all_69: 84411616
+      kb_light_all_197: -1174436999
+      kb_light_all_234: -65526963
+      kb_light_all_111: -1914826299
+      kb_light_all_249: 934128181
+      kb_light_all_149: 1574468523
+      kb_light_all_204: 808977788
+      kb_light_all_34: 419100929
+      kb_light_all_310: -15531162
+      kb_light_all_57: -60300086
+      kb_light_all_114: -72804587
+      kb_light_all_231: 1316129285
+      kb_light_all_42: -957610808
+      kb_light_all_46: 1021383680
+      kb_light_all_94: -1910793664
+      kb_light_all_30: -1251400097
+      kb_light_all_342: -1026881824
+      kb_light_all_321: 1922413696
+      kb_light_all_79: 1144689156
+      kb_light_all_281: -795879208
+      kb_light_all_105: 890349525
+      kb_light_all_315: 1637560243
+      kb_light_all_215: 1399170762
+      kb_light_all_329: -212560968
+      kb_light_all_297: 1750001650
+      kb_light_all_43: 516013550
+      kb_light_all_346: 1064417490
+      kb_light_all_198: 1077117393
+      kb_light_all_7: -614302428
+      kb_light_all_236: -1658922033
+      kb_light_all_170: 1289096843
+      kb_light_all_208: 1996743711
+      kb_light_all_32: 464193907
+      kb_light_all_276: 1468720642
+      kb_light_all_336: -1638526784
+      kb_light_all_182: 82556632
+      kb_light_all_258: -1401066630
+      kb_light_all_154: 38596777
+      kb_light_all_26: -972907752
+      kb_light_all_327: 980172382
+      kb_light_all_60: -763635890
+      kb_light_all_185: 26003371
+      kb_light_all_12: -2079222541
+      kb_light_all_183: -704617187
+      kb_light_all_109: 662739715
+      kb_light_all_221: 896696176
+      kb_light_all_150: -348012297
+      kb_light_all_247: 1408688847
+      kb_light_all_89: 113902823
+      kb_light_all_168: -639928708
+      kb_light_all_176: 1728575468
+      kb_light_all_37: -1525734521
+      kb_light_all_135: -503337565
+      kb_light_all_295: 1741122461
+      kb_light_all_130: 209268579
+      kb_light_all_250: -1871529444
+      kb_light_all_98: 850328830
+      kb_light_all_356: 1397567330
+      kb_light_all_92: 1619456670
+      kb_light_all_66: 718472716
+      kb_light_all_78: 1594089037
+      kb_light_all_59: -1089783971
+      kb_light_all_358: -1769577393
+      kb_light_all_303: -1477811201
+      kb_light_all_264: -386133730
+      kb_light_all_339: -1591554880
+      kb_light_all_334: 2098292566
+      kb_light_all_62: 1258748982
+      kb_light_all_165: -2086974721
+      kb_light_all_222: -85801694
+      kb_light_all_49: 311052537
+      kb_light_all_246: -1255475079
+      kb_light_all_309: 1160625872
+      kb_light_all_90: 1740874184
+      kb_light_all_22: -1093252290
+      kb_light_all_219: 929561546
+      kb_light_all_243: -1412695099
+      kb_light_all_126: 1584447524
+      kb_light_all_15: -35105665
+      kb_light_all_240: 1438182097
+      kb_light_all_348: -296305905
+      kb_light_all_286: -623510753
+      kb_light_all_269: -260374014
+      kb_light_all_23: -321728252
+      kb_light_all_68: 1619736310
+      kb_light_all_194: 1875666683
+      kb_light_all_96: 1424501234
+      kb_light_all_103: -309011736
+      kb_light_all_260: 336960769
+      kb_light_all_314: 1532371694
+      kb_light_all_263: -744232080
+      kb_light_all_199: -1299016758
+      kb_light_all_251: -2042368321
+      kb_light_all_41: 711716260
+      kb_light_all_4: 209648114
+      kb_light_all_88: -1783027557
+      kb_light_all_39: -747352489
+      kb_light_all_55: -1797376178
+      kb_light_all_225: 1048919131
+      kb_light_all_262: 640340633
+      kb_light_all_237: 1271147282
+      kb_light_all_268: 822845807
+      kb_light_all_318: -846335917
+      kb_light_all_11: 76425476
+      kb_light_all_300: -1358791688
+      kb_light_all_280: 1623487222
+      kb_light_all_118: 1177193488
+      kb_light_all_301: 1534050849
+      kb_light_all_104: 48574880
+      kb_light_all_129: 1464623749
+      kb_light_all_113: 1128300693
+      kb_light_all_21: 1485723016
+      kb_light_all_284: 1555114649
+      kb_light_all_351: 156250012
+      kb_light_all_175: -906633601
+      kb_light_all_138: 1183834625
+      kb_light_all_299: -582905648
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
