@@ -5,8 +5,10 @@ using UnityEngine;
 
 public class playerMovement : MonoBehaviour
 {
+    public int playerNumber; //identifies which player is which
+
     // Start is called before the first frame update
-    public Rigidbody2D rb;
+    private Rigidbody2D rb;
     private Vector2 movement;
 
     private int jumpForce;
@@ -24,6 +26,7 @@ public class playerMovement : MonoBehaviour
     private MinimalTimer isAttackingTimer;
     private MinimalTimer attackCooldownTimer;
 
+    private Vector2 attackDirection;
 
     void Start()
     {
@@ -32,11 +35,13 @@ public class playerMovement : MonoBehaviour
 
         movement = Vector2.zero;
         rb = GetComponent<Rigidbody2D>();
-        moveSpeed = 7;
+        moveSpeed = 3;
         canJump = true;
         canAttack = true;
 
-       
+        Debug.Log(gameObject.name + " -> RB: " + rb.GetInstanceID());
+
+
     }
 
 
@@ -47,6 +52,7 @@ public class playerMovement : MonoBehaviour
     /// </summary>
     public void jumpInput()
     {
+
         if (Input.GetKey(KeyCode.W))
         {
             Debug.Log("w pressed::" + canJump);
@@ -68,7 +74,7 @@ public class playerMovement : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
-           
+            
             Debug.Log("shift pressed::" + canAttack);
 
             if (canAttack)
@@ -80,13 +86,54 @@ public class playerMovement : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// horizontal movement for each player
+    /// </summary>
+    /// <returns></returns>
+    public Vector2 horizontalMovement()
+    {
+        if(playerNumber == 1)
+        {
+            if(Input.GetKey(KeyCode.A))
+            {
+                return new Vector2(-moveSpeed, rb.velocity.y);
+            }
+            else if (Input.GetKey(KeyCode.D))
+            {
+                return new Vector2(moveSpeed, rb.velocity.y);
+            }
+            else
+            {
+                return new Vector2(0, rb.velocity.y);
+            }
+        }
+
+        else if (playerNumber == 2)
+        {
+            if (Input.GetKey(KeyCode.LeftArrow))
+            {
+                return new Vector2(-moveSpeed, rb.velocity.y);
+            }
+            else if (Input.GetKey(KeyCode.RightArrow))
+            {
+                return new Vector2(moveSpeed, rb.velocity.y);
+            }
+            else
+            {
+                return new Vector2(0, rb.velocity.y);
+            }
+        }
+
+        return new Vector2(rb.velocity.x, rb.velocity.y);
+    }
+
     void Update()
     {
 
         if(isAttackingTimer.IsCompleted) //when attack is over
         {
             isAttacking = false;
-           
+            
         }
 
         if(attackCooldownTimer.IsCompleted)
@@ -96,7 +143,8 @@ public class playerMovement : MonoBehaviour
 
         if(!isAttacking)
         {
-            movement.x = Input.GetAxisRaw("Horizontal");
+           // movement.x = horizontalMovement().x; deprecated
+           horizontalMovement();
             rb.gravityScale = 3.0f;
         }
         else
@@ -124,14 +172,14 @@ public class playerMovement : MonoBehaviour
             isAttackingTimer = MinimalTimer.Start(0.4f);
             attackCooldownTimer = MinimalTimer.Start(2f);
 
-            Vector2 attackDirection = GetAttackDirection();
+            attackDirection = GetAttackDirection();
             rb.AddForce(attackDirection * attackForce, ForceMode2D.Impulse);
 
             attackPending = false;
         }
 
         rb.velocity = new Vector2(
-            isAttacking ? rb.velocity.x : movement.x * moveSpeed,
+            isAttacking ? rb.velocity.x : horizontalMovement().x * moveSpeed,
             rb.velocity.y
         );
     }
@@ -165,17 +213,37 @@ public class playerMovement : MonoBehaviour
     {
         Vector2 direction = Vector2.zero;
 
-        if (Input.GetKey(KeyCode.A))
-            direction.x -= 1;
+        if(playerNumber == 1)
+        {
+            if (Input.GetKey(KeyCode.A))
+                direction.x -= 1;
 
-        if (Input.GetKey(KeyCode.D))
-            direction.x += 1;
+            if (Input.GetKey(KeyCode.D))
+                direction.x += 1;
 
-        if (Input.GetKey(KeyCode.S))
-            direction.y -= 1;
+            if (Input.GetKey(KeyCode.S))
+                direction.y -= 1;
 
-        if (Input.GetKey(KeyCode.W))
-            direction.y += 1;
+            if (Input.GetKey(KeyCode.W))
+                direction.y += 1;
+        }
+
+        if (playerNumber == 2)
+        {
+            if (Input.GetKey(KeyCode.LeftArrow))
+                direction.x -= 1;
+
+            if (Input.GetKey(KeyCode.RightArrow))
+                direction.x += 1;
+
+            if (Input.GetKey(KeyCode.DownArrow))
+                direction.y -= 1;
+
+            if (Input.GetKey(KeyCode.UpArrow))
+                direction.y += 1;
+        }
+
+
 
         return direction.normalized;
     }
