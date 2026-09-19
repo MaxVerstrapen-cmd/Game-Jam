@@ -275,6 +275,7 @@ GameObject:
   - component: {fileID: 403367114}
   - component: {fileID: 403367116}
   - component: {fileID: 403367115}
+  - component: {fileID: 403367117}
   m_Layer: 0
   m_Name: Borders
   m_TagString: Untagged
@@ -1463,12 +1464,30 @@ TilemapCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
   m_UseDelaunayMesh: 0
+--- !u!252 &403367117
+SurfaceEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 403367112}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Speed: 0
+  m_SpeedVariation: 0
+  m_ForceScale: 0.1
+  m_UseContactForce: 0
+  m_UseFriction: 0
+  m_UseBounce: 1
 --- !u!1 &588932968
 GameObject:
   m_ObjectHideFlags: 0
@@ -1545,13 +1564,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 588932968}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.43, y: 0.53, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 7.503106, y: 1.4879, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_Father: {fileID: 2080619476}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &800814780
 GameObject:
@@ -4085,21 +4104,9 @@ CompositeCollider2D:
       - X: 50000000
         Y: 10625000
       - X: 50000000
-        Y: 19999900
-      - X: 39999959
-        Y: 19999900
-      - X: 39999900
-        Y: 19999959
-      - X: 39999900
         Y: 20000000
-      - X: -39999900
-        Y: 20000000
-      - X: -39999900
-        Y: 19999959
-      - X: -39999959
-        Y: 19999900
       - X: -50000000
-        Y: 19999900
+        Y: 20000000
       - X: -50000000
         Y: 11250000
       - X: -47500000
@@ -4162,8 +4169,8 @@ CompositeCollider2D:
       - {x: 4.250006, y: 1}
       - {x: 4.8125043, y: 1.0000013}
       - {x: 5, y: 1.06252}
-      - {x: 4.999971, y: 1.99999}
-      - {x: -5, y: 1.9999608}
+      - {x: 4.999971, y: 2}
+      - {x: -5, y: 1.9999708}
       - {x: -4.999985, y: 1.1249924}
       - {x: -4.7499943, y: 1}
     - - {x: 15.999971, y: -4}
@@ -4292,6 +4299,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 588932970}
   - {fileID: 72158183}
   m_Father: {fileID: 0}
   m_RootOrder: 3
