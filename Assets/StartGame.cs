@@ -11,6 +11,18 @@ public class StartGame : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // Fall back to the Button on this same object if nothing was dragged in.
+        if (startButton == null)
+        {
+            startButton = GetComponent<Button>();
+        }
+
+        if (startButton == null)
+        {
+            Debug.LogError("StartGame: no Button assigned and none on " + name, this);
+            return;
+        }
+
         startButton.onClick.AddListener(StartTheGame);
     }
 
@@ -22,6 +34,7 @@ public class StartGame : MonoBehaviour
 
     public void StartTheGame()
     {
-        SceneManager.LoadScene("mainScene");
+
+            SceneManager.LoadScene("mainScene");
     }
 }
