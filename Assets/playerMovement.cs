@@ -11,10 +11,13 @@ public class playerMovement : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 movement;
     Animator anim;
+    public playerMovement player1;
+    public playerMovement player2;
 
     private int jumpForce;
     private int moveSpeed;
     private int attackForce;
+
 
     private bool canJump;
     private bool jumpPending;
@@ -23,11 +26,19 @@ public class playerMovement : MonoBehaviour
     private bool attackPending;
     private bool isAttacking;
 
+    private bool parryPending;
+    private bool isParrying;
+
+    private float stunnedTimer;
+
     private int health;
 
 
     private float isAttackingTimer;
     private float attackCooldown;
+
+    private float isParryingTimer;
+    private float parryCooldown;
 
     private Vector2 attackDirection;
 
@@ -42,14 +53,20 @@ public class playerMovement : MonoBehaviour
         return health;
     }
 
+    public void setIstunned(float stunned)
+    {
+        this.stunnedTimer = stunned;
+    }
+
 
 
 
     void Start()
     {
+        anim = GetComponent<Animator>();
         jumpForce = 18;
         attackForce = 17;
-        anim = GetComponent<Animator>();
+
 
         movement = Vector2.zero;
         rb = GetComponent<Rigidbody2D>();
@@ -59,10 +76,24 @@ public class playerMovement : MonoBehaviour
 
         health = 3;
 
-        //Debug.Log(gameObject.name + " -> RB: " + rb.GetInstanceID());
+        parryCooldown = 0;
+        isParryingTimer = 0;
+        stunnedTimer = 0;
+
+        parryPending = false;
+        isParrying = false;
+
+        //player1 = GameObject.Find("player1").GetComponent<playerMovement>();
+        //player2 = GameObject.Find("player2").GetComponent<playerMovement>();
+    
 
 
-    }
+
+
+    //Debug.Log(gameObject.name + " -> RB: " + rb.GetInstanceID());
+
+
+}
 
     public void playerCollide(Collision2D collision)
     {
@@ -74,8 +105,18 @@ public class playerMovement : MonoBehaviour
            !isAttacking &&
            otherPlayer.getIsAttacking())
         {
-            health -= 1;
-            Debug.Log("player" + playerNumber + " has " + health + " left");
+            Debug.Log("player" + playerNumber + " Parry??? " + isParrying);
+
+            if (isParrying)
+            {
+               otherPlayer.setIstunned(Time.time + 0.7f);
+            }
+            else
+            {
+                health -= 1;
+               
+            }
+                
         }
     }
 
@@ -88,15 +129,41 @@ public class playerMovement : MonoBehaviour
     public void jumpInput()
     {
 
-        if ( (Input.GetKey(KeyCode.W) && playerNumber == 1 ) || (Input.GetKey(KeyCode.UpArrow) && playerNumber == 2))
-        {
-           // Debug.Log("w pressed::" + canJump);
+        
+        if (isAttacking)
+            return;
 
+        if ((Input.GetKey(KeyCode.W) && playerNumber == 1) || (Input.GetKey(KeyCode.UpArrow) && playerNumber == 2))
+        {
             if (canJump)
             {
-                //Debug.Log("went through");
                 jumpPending = true;
                 canJump = false;
+            }
+        }
+    }
+
+
+    /// <summary>
+    /// sees if user can attack: tells the game to make the player attack
+    /// </summary>
+    public void attackInput()
+    {
+        if ( (Input.GetKeyDown(KeyCode.LeftShift) && playerNumber == 1) || (Input.GetKeyDown(KeyCode.Keypad0) || Input.GetKeyDown(KeyCode.Alpha0)) && playerNumber == 2) 
+        {
+            if(isParrying)
+            {
+                return;
+            }
+          
+
+            if (Time.time >= attackCooldown)
+            {
+                attackDirection = GetAttackDirection();
+                attackPending = true;
+                attackCooldown = Time.time + 1.5f;
+
+               
             }
 
         }
@@ -105,18 +172,26 @@ public class playerMovement : MonoBehaviour
     /// <summary>
     /// sees if user can attack: tells the game to make the player attack
     /// </summary>
-    public void attackInput()
+    public void parryInput()
     {
-        if ( (Input.GetKeyDown(KeyCode.LeftShift) && playerNumber == 1) || (Input.GetKeyDown(KeyCode.Keypad0) && playerNumber == 2) )
-        {
-            
-          
 
-            if (Time.time >= attackCooldown)
+
+        if ((Input.GetKeyDown(KeyCode.Q) && playerNumber == 1) || (Input.GetKeyDown(KeyCode.Slash)) && playerNumber == 2)
+        {
+            if(isAttacking)
             {
-                attackPending = true;
-                attackCooldown = Time.time + 2f;
+                return;
             }
+
+            if (Time.time >= parryCooldown)
+            {
+               
+                parryPending = true;
+                parryCooldown = Time.time + 2f;
+                Debug.Log("Player " + playerNumber + " IS PARRYING");
+
+            }
+            
 
         }
     }
@@ -171,22 +246,35 @@ public class playerMovement : MonoBehaviour
             
         }
 
-        
-       
-
-        if(!isAttacking)
+        if (Time.time >= isParryingTimer) //when parry is over
         {
-           // movement.x = horizontalMovement().x; deprecated
-           horizontalMovement();
-           // rb.gravityScale = 3.0f;
-        }
-        else
-        {
-           // rb.gravityScale = 0.0f;
+            if(isParrying)
+            {
+                Debug.Log("!!!!!Player " + playerNumber + " NOT PARRYING");
+            }
+            isParrying = false;
+            
         }
 
-        jumpInput();
-        attackInput();
+
+
+        if (stunnedTimer < Time.time)
+        {
+            if (!isAttacking)
+            {
+                // movement.x = horizontalMovement().x; deprecated
+                horizontalMovement();
+                // rb.gravityScale = 3.0f;
+            }
+            else
+            {
+                // rb.gravityScale = 0.0f;
+            }
+
+            jumpInput();
+            parryInput();
+            attackInput();
+        }
 
     }
 
@@ -197,6 +285,7 @@ public class playerMovement : MonoBehaviour
 
         if (jumpPending)
         {
+            Debug.Log("player" + playerNumber + " has " + health + " left");
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             jumpPending = false;
         }
@@ -215,20 +304,32 @@ public class playerMovement : MonoBehaviour
                 }
             }
 
-                isAttacking = true;
+            isAttacking = true;
             isAttackingTimer = Time.time + 0.3f;
             
 
-            attackDirection = GetAttackDirection();
-            rb.AddForce(attackDirection * attackForce, ForceMode2D.Impulse);
+            rb.AddForce(attackDirection * attackForce * (attackDirection.y == 1 ? 2 : 1), ForceMode2D.Impulse);
 
             attackPending = false;
         }
 
-        rb.velocity = new Vector2(
-            isAttacking ? rb.velocity.x : horizontalMovement().x,
-            rb.velocity.y
-        );
+        if (parryPending)
+        {
+            isParrying = true;
+            isParryingTimer = Time.time + 0.4f;
+
+
+
+            parryPending = false;
+        }
+
+        if (stunnedTimer < Time.time) //if not stunned
+        {
+                rb.velocity = new Vector2(
+                isAttacking ? rb.velocity.x : horizontalMovement().x,
+                rb.velocity.y
+                );
+        }
     }
 
 
@@ -253,7 +354,9 @@ public class playerMovement : MonoBehaviour
     {
         Vector2 direction = Vector2.zero;
 
-        if(playerNumber == 1)
+        Debug.Log("P2 DASH BUTTON PRESSED");
+
+        if (playerNumber == 1)
         {
             if (Input.GetKey(KeyCode.A))
                 direction.x -= 1;
@@ -283,7 +386,7 @@ public class playerMovement : MonoBehaviour
                 direction.y += 1;
         }
 
-
+        Debug.Log(direction);
 
         return direction.normalized;
     }
