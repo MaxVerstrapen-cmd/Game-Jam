@@ -20,12 +20,37 @@ public class CombatDialogue : MonoBehaviour
     private Coroutine headRoutine;
     private Coroutine heelRoutine;
 
+
+//-----------------------------
+    public GameObject player1, player2;
+
+    public playerMovement p1;
+    public playerMovement p2;
+
+    private int OriginalHealth1;
+    private int OriginalHealth2;
+//--------------------------
+
     private void Awake()
     {
         mainCamera = Camera.main;
 
         headText.gameObject.SetActive(false);
         heelText.gameObject.SetActive(false);
+
+        
+    }
+
+    private void Start()
+    {
+        player1 = GameObject.Find("player1");
+        player2 = GameObject.Find("player2");
+
+        p1 = player1.GetComponent<playerMovement>();
+        p2 = player2.GetComponent<playerMovement>();
+
+        OriginalHealth1 = p1.getHealth();
+        OriginalHealth2 = p2.getHealth();
     }
 
     private void LateUpdate()
@@ -73,15 +98,36 @@ public class CombatDialogue : MonoBehaviour
 
     private void Update()
 {
-    // Temporary testing controls — remove these once combat hits trigger dialogue.
-    if (Input.GetKeyDown(KeyCode.Alpha1))
-    {
-        HeadSpeaks("Curse you, Heel!");
-    }
 
-    if (Input.GetKeyDown(KeyCode.Alpha2))
-    {
+    //OriginalHealth1 = p1.getHealth();
+    // Existing hit-reaction tests
+    if (p2.getHealth() != OriginalHealth2 && OriginalHealth2 == 3)
+        OriginalHealth2 = p2.getHealth();
+        HeadSpeaks("Curse you, Heel!");
+        
+
+    if (p1.getHealth() != OriginalHealth1)
         HeelSpeaks("Curse you, Head!");
-    }
+        OriginalHealth1 = p1.getHealth();
+
+    // New half-health tests
+    if (p2.getHealth() != OriginalHealth2 && OriginalHealth2 == 2)
+        OriginalHealth2 = p2.getHealth();
+        HeadSpeaks("You'll have to hit harder than that, Heel!");
+        
+
+    if (p1.getHealth() != OriginalHealth1)
+        HeelSpeaks("You think you've got me beat, Head? Think again!");
+        OriginalHealth1 = p1.getHealth();
+
+    // New zero-health tests
+    if (p2.getHealth() != OriginalHealth2 && OriginalHealth2 == 1)
+        OriginalHealth2 = p2.getHealth();
+        HeadSpeaks("No... I was supposed to get over you...");
+        
+
+    if (p1.getHealth() != OriginalHealth1)
+        HeelSpeaks("Curses, Head! The princess is yours...");
+        OriginalHealth1 = p1.getHealth();
 }
 }
