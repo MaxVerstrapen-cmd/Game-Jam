@@ -321,6 +321,7 @@ public class playerMovement : MonoBehaviour
             }
             else
             {
+                anim.SetTrigger("Attack");
                 Physics2D.IgnoreCollision(
                 GetComponent<Collider2D>(),
                 player1.GetComponent<Collider2D>(),
