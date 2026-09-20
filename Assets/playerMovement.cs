@@ -15,6 +15,8 @@ public class playerMovement : MonoBehaviour
     private int moveSpeed;
     private int attackForce;
 
+    private int maxSpeed;
+
     private bool canJump;
     private bool jumpPending;
 
@@ -22,7 +24,7 @@ public class playerMovement : MonoBehaviour
     private bool attackPending;
     private bool isAttacking;
 
-    private int health;
+    private int health = 3;
 
 
     private float isAttackingTimer;
@@ -48,6 +50,7 @@ public class playerMovement : MonoBehaviour
     {
         jumpForce = 18;
         attackForce = 17;
+        maxSpeed = 20;
 
         movement = Vector2.zero;
         rb = GetComponent<Rigidbody2D>();
@@ -55,7 +58,6 @@ public class playerMovement : MonoBehaviour
         canJump = true;
 
 
-        health = 3;
 
         //Debug.Log(gameObject.name + " -> RB: " + rb.GetInstanceID());
 
@@ -86,34 +88,38 @@ public class playerMovement : MonoBehaviour
     public void jumpInput()
     {
 
-        if ( (Input.GetKey(KeyCode.W) && playerNumber == 1 ) || (Input.GetKey(KeyCode.UpArrow) && playerNumber == 2))
-        {
-           // Debug.Log("w pressed::" + canJump);
+       
+        if (isAttacking)
+            return;
 
+        if ((Input.GetKey(KeyCode.W) && playerNumber == 1) || (Input.GetKey(KeyCode.UpArrow) && playerNumber == 2))
+        {
             if (canJump)
             {
-                //Debug.Log("went through");
                 jumpPending = true;
                 canJump = false;
             }
-
         }
     }
+
 
     /// <summary>
     /// sees if user can attack: tells the game to make the player attack
     /// </summary>
     public void attackInput()
     {
-        if ( (Input.GetKeyDown(KeyCode.LeftShift) && playerNumber == 1) || (Input.GetKeyDown(KeyCode.Keypad0) && playerNumber == 2) )
+        if ( (Input.GetKeyDown(KeyCode.LeftShift) && playerNumber == 1) || (Input.GetKeyDown(KeyCode.Keypad0) || Input.GetKeyDown(KeyCode.Alpha0)) && playerNumber == 2)
         {
-            
-          
+           
+         
 
             if (Time.time >= attackCooldown)
             {
+                attackDirection = GetAttackDirection();
                 attackPending = true;
-                attackCooldown = Time.time + 2f;
+                attackCooldown = Time.time + 1.5f;
+
+               
             }
 
         }
@@ -166,10 +172,10 @@ public class playerMovement : MonoBehaviour
         if(Time.time >= isAttackingTimer) //when attack is over
         {
             isAttacking = false;
-            
+           
         }
 
-        
+       
        
 
         if(!isAttacking)
@@ -202,11 +208,10 @@ public class playerMovement : MonoBehaviour
         if (attackPending)
         {
             isAttacking = true;
-            isAttackingTimer = Time.time + 0.3f;
-            
+            isAttackingTimer = Time.time + 0.2f;
+           
 
-            attackDirection = GetAttackDirection();
-            rb.AddForce(attackDirection * attackForce, ForceMode2D.Impulse);
+            rb.AddForce(attackDirection * attackForce * (attackDirection.y == 1 ? 2 : 1), ForceMode2D.Impulse);
 
             attackPending = false;
         }
@@ -233,13 +238,15 @@ public class playerMovement : MonoBehaviour
         playerCollide(collision);
     }
 
-    
+   
     //chooses (2d) vector direction based on player input
     Vector2 GetAttackDirection()
     {
         Vector2 direction = Vector2.zero;
 
-        if(playerNumber == 1)
+        Debug.Log("P2 DASH BUTTON PRESSED");
+
+        if (playerNumber == 1)
         {
             if (Input.GetKey(KeyCode.A))
                 direction.x -= 1;
@@ -269,7 +276,7 @@ public class playerMovement : MonoBehaviour
                 direction.y += 1;
         }
 
-
+        Debug.Log(direction);
 
         return direction.normalized;
     }
