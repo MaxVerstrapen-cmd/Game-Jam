@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 636c86828ceb3b24789be135797f152e
+guid: d2c8a1f7e598f3b4d9b1f60279f78522
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -82,85 +82,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: HURT_0
+      name: Take Hit_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 96
-        height: 96
+        width: 180
+        height: 180
       alignment: 9
-      pivot: {x: 0.5, y: 0.1667}
+      pivot: {x: 0.5, y: 0.3722}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c493c75fc9710438697100d11105c445
-      internalID: 1186696748
+      spriteID: c48d260289e152daa34183cc8f4de849
+      internalID: 1000000001
       vertices: []
       indices:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HURT_1
+      name: Take Hit_1
       rect:
         serializedVersion: 2
-        x: 96
+        x: 180
         y: 0
-        width: 96
-        height: 96
+        width: 180
+        height: 180
       alignment: 9
-      pivot: {x: 0.5, y: 0.1667}
+      pivot: {x: 0.5, y: 0.3722}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8cc2459c2b4b7c5147470409083a5b7b
-      internalID: 635401569
+      spriteID: d6a0bf2e68c0448d3113e129df4ea39c
+      internalID: 1000000002
       vertices: []
       indices:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HURT_2
+      name: Take Hit_2
       rect:
         serializedVersion: 2
-        x: 192
+        x: 360
         y: 0
-        width: 96
-        height: 96
+        width: 180
+        height: 180
       alignment: 9
-      pivot: {x: 0.5, y: 0.1667}
+      pivot: {x: 0.5, y: 0.3722}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30f859a9b06f48e612c76d1c8bc907a8
-      internalID: 310981332
+      spriteID: 11d5553c5873a0bb1e4d2d2622032c92
+      internalID: 1000000003
       vertices: []
       indices:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HURT_3
+      name: Take Hit_3
       rect:
         serializedVersion: 2
-        x: 288
+        x: 540
         y: 0
-        width: 96
-        height: 96
+        width: 180
+        height: 180
       alignment: 9
-      pivot: {x: 0.5, y: 0.1667}
+      pivot: {x: 0.5, y: 0.3722}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc851e65b07d17f2508cf0bf4b3533ea
-      internalID: -1680055617
+      spriteID: 0e2feaa2d2fef20b48944678fc82e4f4
+      internalID: 1000000004
       vertices: []
       indices:
       edges: []
@@ -176,10 +176,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      HURT_0: 1186696748
-      HURT_1: 635401569
-      HURT_2: 310981332
-      HURT_3: -1680055617
+      Take Hit_0: 1000000001
+      Take Hit_1: 1000000002
+      Take Hit_2: 1000000003
+      Take Hit_3: 1000000004
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 
