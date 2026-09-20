@@ -31,7 +31,7 @@ public class playerMovement : MonoBehaviour
 
     private float stunnedTimer;
 
-    private int health;
+    private int health = 3;
 
 
     private float isAttackingTimer;
@@ -83,44 +83,45 @@ public class playerMovement : MonoBehaviour
         parryPending = false;
         isParrying = false;
 
-        //player1 = GameObject.Find("player1").GetComponent<playerMovement>();
-        //player2 = GameObject.Find("player2").GetComponent<playerMovement>();
-    
+        player1 = GameObject.Find("player1").GetComponent<playerMovement>();
+        player2 = GameObject.Find("player2").GetComponent<playerMovement>();
 
 
 
 
-    //Debug.Log(gameObject.name + " -> RB: " + rb.GetInstanceID());
+
+        //Debug.Log(gameObject.name + " -> RB: " + rb.GetInstanceID());
+    }
 
 
-}
 
-    public void playerCollide(Collision2D collision)
+
+    public void playerHitbox(Collider2D other)
     {
-        //find the player object that the "current" player collided with
         playerMovement otherPlayer =
-        collision.gameObject.GetComponent<playerMovement>();
+            other.GetComponentInParent<playerMovement>();
 
         if (otherPlayer != null &&
-           !isAttacking &&
-           otherPlayer.getIsAttacking())
+            !isAttacking &&
+            otherPlayer.getIsAttacking())
         {
             Debug.Log("player" + playerNumber + " Parry??? " + isParrying);
 
             if (isParrying)
             {
-               otherPlayer.setIstunned(Time.time + 0.7f);
+                otherPlayer.setIstunned(Time.time + 0.7f);
             }
             else
             {
                 health -= 1;
-               
             }
-                
         }
     }
 
-
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        playerHitbox(other);
+    }
 
 
     /// <summary>
@@ -129,9 +130,11 @@ public class playerMovement : MonoBehaviour
     public void jumpInput()
     {
 
-        
+
         if (isAttacking)
+        {
             return;
+        }
 
         if ((Input.GetKey(KeyCode.W) && playerNumber == 1) || (Input.GetKey(KeyCode.UpArrow) && playerNumber == 2))
         {
@@ -149,13 +152,13 @@ public class playerMovement : MonoBehaviour
     /// </summary>
     public void attackInput()
     {
-        if ( (Input.GetKeyDown(KeyCode.LeftShift) && playerNumber == 1) || (Input.GetKeyDown(KeyCode.Keypad0) || Input.GetKeyDown(KeyCode.Alpha0)) && playerNumber == 2) 
+        if ((Input.GetKeyDown(KeyCode.LeftShift) && playerNumber == 1) || (Input.GetKeyDown(KeyCode.Keypad0) || Input.GetKeyDown(KeyCode.Alpha0)) && playerNumber == 2)
         {
-            if(isParrying)
+            if (isParrying)
             {
                 return;
             }
-          
+
 
             if (Time.time >= attackCooldown)
             {
@@ -163,7 +166,7 @@ public class playerMovement : MonoBehaviour
                 attackPending = true;
                 attackCooldown = Time.time + 1.5f;
 
-               
+
             }
 
         }
@@ -178,20 +181,20 @@ public class playerMovement : MonoBehaviour
 
         if ((Input.GetKeyDown(KeyCode.Q) && playerNumber == 1) || (Input.GetKeyDown(KeyCode.Slash)) && playerNumber == 2)
         {
-            if(isAttacking)
+            if (isAttacking)
             {
                 return;
             }
 
             if (Time.time >= parryCooldown)
             {
-               
+
                 parryPending = true;
                 parryCooldown = Time.time + 2f;
                 Debug.Log("Player " + playerNumber + " IS PARRYING");
 
             }
-            
+
 
         }
     }
@@ -202,9 +205,9 @@ public class playerMovement : MonoBehaviour
     /// <returns></returns>
     public Vector2 horizontalMovement()
     {
-        if(playerNumber == 1)
+        if (playerNumber == 1)
         {
-            if(Input.GetKey(KeyCode.A))
+            if (Input.GetKey(KeyCode.A))
             {
                 return new Vector2(-moveSpeed, rb.velocity.y);
             }
@@ -240,21 +243,29 @@ public class playerMovement : MonoBehaviour
     void Update()
     {
 
-        if(Time.time >= isAttackingTimer) //when attack is over
+        if (Time.time >= isAttackingTimer) //when attack is over
         {
             isAttacking = false;
-            
+
+                Physics2D.IgnoreCollision(
+           GetComponent<Collider2D>(),
+           playerNumber == 1
+               ? player2.GetComponent<Collider2D>()
+               : player1.GetComponent<Collider2D>(),
+           false);
+
         }
 
         if (Time.time >= isParryingTimer) //when parry is over
         {
-            if(isParrying)
+            if (isParrying)
             {
                 Debug.Log("!!!!!Player " + playerNumber + " NOT PARRYING");
             }
             isParrying = false;
-            
+
         }
+
 
 
 
@@ -281,7 +292,7 @@ public class playerMovement : MonoBehaviour
     private void FixedUpdate()
     {
 
-       
+
 
         if (jumpPending)
         {
@@ -295,18 +306,26 @@ public class playerMovement : MonoBehaviour
             if (playerNumber == 1)
             {
                 anim.SetTrigger("Attack");
+
+                Physics2D.IgnoreCollision(
+                GetComponent<Collider2D>(),
+                player2.GetComponent<Collider2D>(),
+                true
+                );
             }
             else
             {
-                if (playerNumber == 2)
-                {
-                    anim.SetTrigger("Attack");
-                }
+                Physics2D.IgnoreCollision(
+                GetComponent<Collider2D>(),
+                player1.GetComponent<Collider2D>(),
+                true
+                );
             }
+
 
             isAttacking = true;
             isAttackingTimer = Time.time + 0.3f;
-            
+
 
             rb.AddForce(attackDirection * attackForce * (attackDirection.y == 1 ? 2 : 1), ForceMode2D.Impulse);
 
@@ -323,72 +342,71 @@ public class playerMovement : MonoBehaviour
             parryPending = false;
         }
 
+
         if (stunnedTimer < Time.time) //if not stunned
         {
-                rb.velocity = new Vector2(
-                isAttacking ? rb.velocity.x : horizontalMovement().x,
-                rb.velocity.y
-                );
+            rb.velocity = new Vector2(
+            isAttacking ? rb.velocity.x : horizontalMovement().x,
+            rb.velocity.y
+            );
         }
     }
 
 
 
+
     void OnCollisionEnter2D(Collision2D collision)
     {
-        //check if jump should refrwsh
         if (collision.gameObject.CompareTag("floor"))
         {
             Debug.Log("collision" + canJump);
             canJump = true;
             Debug.Log("collision" + canJump);
         }
-
-        //checks if players are damaged
-        playerCollide(collision);
     }
 
-    
+
     //chooses (2d) vector direction based on player input
     Vector2 GetAttackDirection()
-    {
-        Vector2 direction = Vector2.zero;
-
-        Debug.Log("P2 DASH BUTTON PRESSED");
-
-        if (playerNumber == 1)
         {
-            if (Input.GetKey(KeyCode.A))
-                direction.x -= 1;
+            Vector2 direction = Vector2.zero;
 
-            if (Input.GetKey(KeyCode.D))
-                direction.x += 1;
+            Debug.Log("P2 DASH BUTTON PRESSED");
 
-            if (Input.GetKey(KeyCode.S))
-                direction.y -= 1;
+            if (playerNumber == 1)
+            {
+                if (Input.GetKey(KeyCode.A))
+                    direction.x -= 1;
 
-            if (Input.GetKey(KeyCode.W))
-                direction.y += 1;
+                if (Input.GetKey(KeyCode.D))
+                    direction.x += 1;
+
+                if (Input.GetKey(KeyCode.S))
+                    direction.y -= 1;
+
+                if (Input.GetKey(KeyCode.W))
+                    direction.y += 1;
+            }
+
+            if (playerNumber == 2)
+            {
+                if (Input.GetKey(KeyCode.LeftArrow))
+                    direction.x -= 1;
+
+                if (Input.GetKey(KeyCode.RightArrow))
+                    direction.x += 1;
+
+                if (Input.GetKey(KeyCode.DownArrow))
+                    direction.y -= 1;
+
+                if (Input.GetKey(KeyCode.UpArrow))
+                    direction.y += 1;
+            }
+
+            Debug.Log(direction);
+
+            return direction.normalized;
         }
 
-        if (playerNumber == 2)
-        {
-            if (Input.GetKey(KeyCode.LeftArrow))
-                direction.x -= 1;
-
-            if (Input.GetKey(KeyCode.RightArrow))
-                direction.x += 1;
-
-            if (Input.GetKey(KeyCode.DownArrow))
-                direction.y -= 1;
-
-            if (Input.GetKey(KeyCode.UpArrow))
-                direction.y += 1;
-        }
-
-        Debug.Log(direction);
-
-        return direction.normalized;
-    }
-
+    
 }
