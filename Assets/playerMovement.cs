@@ -33,8 +33,6 @@ public class playerMovement : MonoBehaviour
 
     private float stunnedTimer;
 
-    private int health = 3;
-
 
     private float isAttackingTimer;
     private float attackCooldown;
