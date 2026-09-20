@@ -32,6 +32,8 @@ public class DialogueData : ScriptableObject
 [System.Serializable]
 public class DialogueLine
 {
+    public string speakerName; //JJR
+    
     [TextArea(2, 5)]
     public string text;
 

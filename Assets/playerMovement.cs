@@ -132,12 +132,18 @@ public class playerMovement : MonoBehaviour
        
         
         if (isAttacking)
+        {
             return;
+        }
 
         if ((Input.GetKey(KeyCode.W) && playerNumber == 1) || (Input.GetKey(KeyCode.UpArrow) && playerNumber == 2))
         {
             if (canJump)
             {
+                if(playerNumber == 1)
+                {
+                    anim.SetBool("IsJumping", true);
+                }
                 jumpPending = true;
                 canJump = false;
             }
@@ -284,9 +290,6 @@ public class playerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-
-       
-
         if (jumpPending)
         {
             Debug.Log("player" + playerNumber + " has " + health + " left");
@@ -343,6 +346,7 @@ public class playerMovement : MonoBehaviour
         //check if jump should refrwsh
         if (collision.gameObject.CompareTag("floor"))
         {
+            anim.SetBool("IsJumping", false);
             Debug.Log("collision" + canJump);
             canJump = true;
             Debug.Log("collision" + canJump);
