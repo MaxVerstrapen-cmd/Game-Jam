@@ -20,10 +20,9 @@ public class playerMovement : MonoBehaviour
     private int jumpForce;
     private int moveSpeed;
     private int attackForce;
-
     private int maxSpeed;
 
-    private bool canJump;
+    private bool canJump; 
     private bool jumpPending;
 
 
@@ -68,6 +67,11 @@ public class playerMovement : MonoBehaviour
         return health;
     }
 
+    public void setHealth(int nHealth)
+    {
+        this.health = nHealth;
+    }
+
     public void setIstunned(float stunned)
     {
         this.stunnedTimer = stunned;
@@ -81,7 +85,7 @@ public class playerMovement : MonoBehaviour
         anim = GetComponent<Animator>();
         jumpForce = 18;
         attackForce = 17;
-        maxSpeed = 20;
+        maxSpeed = 25;
 
 
         movement = Vector2.zero;
@@ -127,7 +131,7 @@ public class playerMovement : MonoBehaviour
 
     public void Hitbox(playerMovement otherPlayer)
     {
-        //only a live dash does damage - the hitbox collider is disabled
+        //only a live dash does damage, the hitbox collider is disabled
         //outside of one, but the parried-dash collision path is not
         if (!isAttacking || otherPlayer == null || otherPlayer == this)
         {
@@ -244,7 +248,7 @@ public class playerMovement : MonoBehaviour
     /// </summary>
     public void attackInput()
     {
-        if ((Input.GetKeyDown(KeyCode.LeftShift) && playerNumber == 1) || (Input.GetKeyDown(KeyCode.Keypad0) || Input.GetKeyDown(KeyCode.Alpha0)) && playerNumber == 2)
+        if ((Input.GetKeyDown(KeyCode.LeftShift) && playerNumber == 1) || (Input.GetKeyDown(KeyCode.Keypad0) || Input.GetKeyDown(KeyCode.Comma)) && playerNumber == 2)
         {
             if (isParrying)
             {
@@ -271,7 +275,7 @@ public class playerMovement : MonoBehaviour
     {
 
 
-        if ((Input.GetKeyDown(KeyCode.Q) && playerNumber == 1) || (Input.GetKeyDown(KeyCode.Slash)) && playerNumber == 2)
+        if ((Input.GetKeyDown(KeyCode.Space) && playerNumber == 1) || ( (Input.GetKeyDown(KeyCode.Keypad1)  ) || (Input.GetKeyDown(KeyCode.Period) )) && playerNumber == 2)
         {
             if (isAttacking)
             {
@@ -430,9 +434,8 @@ public class playerMovement : MonoBehaviour
         if (stunnedTimer < Time.time) //if not stunned
         {
             rb.velocity = new Vector2(
-            isAttacking ? rb.velocity.x : horizontalMovement().x,
-            rb.velocity.y
-            );
+            Mathf.Clamp( (isAttacking ? rb.velocity.x : horizontalMovement().x), (-1 * maxSpeed) , maxSpeed),
+            Mathf.Clamp( rb.velocity.y, (-1 * maxSpeed), maxSpeed ) );
         }
 
         updatePassThrough();
@@ -449,11 +452,7 @@ public class playerMovement : MonoBehaviour
             return;
         }
 
-        //if we solidly hit the other player mid-dash then updatePassThrough
-        //kept them solid, i.e. they parried. the two trigger hitboxes are the
-        //same shape as the body colliders, so when the bodies get pushed apart
-        //the triggers never actually overlap and OnTriggerEnter2D never fires -
-        //this is the only event that reports a parried dash.
+       
         if (!isAttacking)
         {
             return;
