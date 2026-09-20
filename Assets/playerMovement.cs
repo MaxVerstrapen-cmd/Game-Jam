@@ -54,16 +54,23 @@ public class playerMovement : MonoBehaviour
 
     private Vector2 attackDirection;
 
-    //every player this dash has already damaged. one dash overlaps the other
-    //player's body collider AND their hitbox child, and a parried dash also
-    //reports through OnCollisionEnter2D, so without this a single dash would
-    //land two or three times.
+    public AudioSource dashSource;
+    public AudioClip dashSound;
+
+    public AudioSource jumpSource;
+    public AudioClip jumpSound;
+
+    public AudioSource hitSource;
+    public AudioClip hitSound;
+
+    public AudioSource parrySource;
+    public AudioClip parrySound;
+
+
     private readonly HashSet<playerMovement> hitThisDash =
         new HashSet<playerMovement>();
 
-    //mirrors the current Physics2D.IgnoreCollision state for this pair, so we
-    //only poke the physics engine when it actually changes. re-applying it
-    //every step resets the pair's contact state and re-fires collision events.
+
     private bool passingThrough;
 
 
@@ -131,13 +138,13 @@ public class playerMovement : MonoBehaviour
 
         attackHitbox.enabled = false;
 
-        //Parry plays at the base of the sword, sized to the 0.4s parry
+        //Parry plays at the base of the sword, sized to the 0.3s parry
         //window (isParryingTimer) below. Stun plays as a small halo just
         //above the head, sized to the 0.7s stun window (setIstunned) in
         //Hitbox(). Both offsets/scales are given in world units (tuned
         //against the knight, whose scene instance is scaled 3x) - see
         //CreateEffectChild for why that matters.
-        parryEffect = CreateEffectChild("ParryEffect", new Vector3(0.9f, 1.65f, 0), 3f, parrySprites, 6f / 0.4f);
+        parryEffect = CreateEffectChild("ParryEffect", new Vector3(0.9f, 1.65f, 0), 3f, parrySprites, 6f / 0.3f);
         stunEffect = CreateEffectChild("StunEffect", new Vector3(0, 1.75f, 0), 1.05f, stunSprites, 6f / 0.7f);
 
         //Debug.Log(gameObject.name + " -> RB: " + rb.GetInstanceID());
@@ -204,6 +211,7 @@ public class playerMovement : MonoBehaviour
             return;
         }
 
+        hitSource.PlayOneShot(hitSound);
         otherPlayer.health -= 1;
 
         if (otherPlayer.playerNumber == 2)
@@ -441,6 +449,9 @@ public class playerMovement : MonoBehaviour
         {
             Debug.Log("player" + playerNumber + " has " + health + " left");
             rb.velocity = new Vector2(rb.velocity.x, 0);
+
+            jumpSource.PlayOneShot(jumpSound);
+
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             jumpPending = false;
         }
@@ -448,6 +459,8 @@ public class playerMovement : MonoBehaviour
         if (attackPending)
         {
             anim.SetTrigger("Attack");
+            dashSource.PlayOneShot(dashSound);
+
 
             Debug.Log("PLAYER " + playerNumber + " STARTING DASH");
 
@@ -469,8 +482,10 @@ public class playerMovement : MonoBehaviour
         if (parryPending)
         {
             isParrying = true;
-            isParryingTimer = Time.time + 0.4f;
+            isParryingTimer = Time.time + 0.3f;
+
             parryEffect.Play();
+            parrySource.PlayOneShot(parrySound);
 
             parryPending = false;
         }
