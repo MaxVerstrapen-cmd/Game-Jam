@@ -9,7 +9,13 @@ public class playerMovement : MonoBehaviour
 
     // Start is called before the first frame update
     private Rigidbody2D rb;
+    private Collider2D bodyCollider;
     private Vector2 movement;
+    Animator anim;
+    public playerMovement player1;
+    public playerMovement player2;
+
+    [SerializeField] private Collider2D attackHitbox; //for player hitbox
 
     private int jumpForce;
     private int moveSpeed;
@@ -20,15 +26,37 @@ public class playerMovement : MonoBehaviour
     private bool canJump;
     private bool jumpPending;
 
+
     private bool attackPending;
     private bool isAttacking;
 
     private int health = 3;
+    private bool parryPending;
+    private bool isParrying;
+
+    private float stunnedTimer;
+
 
     private float isAttackingTimer;
     private float attackCooldown;
 
+    private float isParryingTimer;
+    private float parryCooldown;
+
     private Vector2 attackDirection;
+
+    //every player this dash has already damaged. one dash overlaps the other
+    //player's body collider AND their hitbox child, and a parried dash also
+    //reports through OnCollisionEnter2D, so without this a single dash would
+    //land two or three times.
+    private readonly HashSet<playerMovement> hitThisDash =
+        new HashSet<playerMovement>();
+
+    //mirrors the current Physics2D.IgnoreCollision state for this pair, so we
+    //only poke the physics engine when it actually changes. re-applying it
+    //every step resets the pair's contact state and re-fires collision events.
+    private bool passingThrough;
+
 
     public bool getIsAttacking()
     {
@@ -40,38 +68,139 @@ public class playerMovement : MonoBehaviour
         return health;
     }
 
+    public void setIstunned(float stunned)
+    {
+        this.stunnedTimer = stunned;
+    }
+
+
 
 
     void Start()
     {
+        anim = GetComponent<Animator>();
         jumpForce = 18;
         attackForce = 17;
         maxSpeed = 20;
 
+
         movement = Vector2.zero;
         rb = GetComponent<Rigidbody2D>();
+        bodyCollider = GetComponent<Collider2D>();
         moveSpeed = 9;
         canJump = true;
 
 
-        //Debug.Log(gameObject.name + " -> RB: " + rb.GetInstanceID());
 
-    }
+        parryCooldown = 0;
+        isParryingTimer = 0;
+        stunnedTimer = 0;
 
-    public void playerCollide(Collision2D collision)
-    {
-        //find the player object that the "current" player collided with
-        playerMovement otherPlayer =
-        collision.gameObject.GetComponent<playerMovement>();
+        parryPending = false;
+        isParrying = false;
 
-        if (otherPlayer != null &&
-           !isAttacking &&
-           otherPlayer.getIsAttacking())
+        player1 = GameObject.Find("player1").GetComponent<playerMovement>();
+        player2 = GameObject.Find("player2").GetComponent<playerMovement>();
+
+        //the hitbox children are added per-scene, so the script can easily be
+        //missing off them - without it nothing ever calls Hitbox()
+        if (attackHitbox.GetComponent<HitboxScript>() == null)
         {
-            health -= 1;
-            Debug.Log("player" + playerNumber + " has " + health + " left");
+            Debug.LogWarning(
+                "Player " + playerNumber + ": " + attackHitbox.name +
+                " had no HitboxScript, adding one at runtime"
+            );
+
+            attackHitbox.gameObject.AddComponent<HitboxScript>();
         }
+
+        attackHitbox.enabled = false;
+
+
+
+
+        //Debug.Log(gameObject.name + " -> RB: " + rb.GetInstanceID());
     }
+
+
+
+
+    public void Hitbox(playerMovement otherPlayer)
+    {
+        //only a live dash does damage - the hitbox collider is disabled
+        //outside of one, but the parried-dash collision path is not
+        if (!isAttacking || otherPlayer == null || otherPlayer == this)
+        {
+            return;
+        }
+
+        //Add returns false if this dash already connected with them
+        if (!hitThisDash.Add(otherPlayer))
+        {
+            return;
+        }
+
+        Debug.Log("PLAYER " + playerNumber +
+                  " HIT PLAYER " + otherPlayer.playerNumber);
+
+        if (otherPlayer.isParrying)
+        {
+            Debug.Log("PLAYER " + otherPlayer.playerNumber + " PARRIED!");
+
+            // The attacker gets stunned
+            setIstunned(Time.time + 0.7f);
+            return;
+        }
+
+        if (otherPlayer.health <= 0)
+        {
+            return;
+        }
+
+        otherPlayer.health -= 1;
+
+        Debug.Log(
+            "PLAYER " + otherPlayer.playerNumber +
+            " HEALTH: " + otherPlayer.health
+        );
+    }
+
+
+    /// <summary>
+    /// decides, for this frame, whether the two players are allowed to move
+    /// through each other. a dash passes through the other player, unless that
+    /// player is parrying it - then they stay solid and the dash is blocked.
+    /// both players run this and reach the same answer, so neither one can
+    /// switch the other's pass-through off while their dash is still going.
+    /// </summary>
+    private void updatePassThrough()
+    {
+        playerMovement otherPlayer =
+            playerNumber == 1 ? player2 : player1;
+
+        if (otherPlayer == null || otherPlayer == this)
+        {
+            return;
+        }
+
+        bool passThrough =
+            (isAttacking && !otherPlayer.isParrying) ||
+            (otherPlayer.isAttacking && !isParrying);
+
+        if (passThrough == passingThrough)
+        {
+            return;
+        }
+
+        passingThrough = passThrough;
+
+        Physics2D.IgnoreCollision(
+            bodyCollider,
+            otherPlayer.bodyCollider,
+            passThrough
+        );
+    }
+
 
 
 
@@ -81,29 +210,38 @@ public class playerMovement : MonoBehaviour
     public void jumpInput()
     {
 
-       
         if (isAttacking)
+        {
             return;
+        }
 
         if ((Input.GetKey(KeyCode.W) && playerNumber == 1) || (Input.GetKey(KeyCode.UpArrow) && playerNumber == 2))
         {
             if (canJump)
             {
+                if(playerNumber == 1)
+                {
+                    anim.SetBool("IsJumping", true);
+                }
                 jumpPending = true;
                 canJump = false;
             }
         }
     }
 
+
     /// <summary>
     /// sees if user can attack: tells the game to make the player attack
     /// </summary>
     public void attackInput()
     {
-        if ( (Input.GetKeyDown(KeyCode.LeftShift) && playerNumber == 1) || (Input.GetKeyDown(KeyCode.Keypad0) || Input.GetKeyDown(KeyCode.Alpha0)) && playerNumber == 2)
+        if ((Input.GetKeyDown(KeyCode.LeftShift) && playerNumber == 1) || (Input.GetKeyDown(KeyCode.Keypad0) || Input.GetKeyDown(KeyCode.Alpha0)) && playerNumber == 2)
         {
-           
-         
+            if (isParrying)
+            {
+                return;
+            }
+
 
             if (Time.time >= attackCooldown)
             {
@@ -111,8 +249,35 @@ public class playerMovement : MonoBehaviour
                 attackPending = true;
                 attackCooldown = Time.time + 1.5f;
 
-               
+
             }
+
+        }
+    }
+
+    /// <summary>
+    /// sees if user can attack: tells the game to make the player attack
+    /// </summary>
+    public void parryInput()
+    {
+
+
+        if ((Input.GetKeyDown(KeyCode.Q) && playerNumber == 1) || (Input.GetKeyDown(KeyCode.Slash)) && playerNumber == 2)
+        {
+            if (isAttacking)
+            {
+                return;
+            }
+
+            if (Time.time >= parryCooldown)
+            {
+
+                parryPending = true;
+                parryCooldown = Time.time + 2f;
+                Debug.Log("Player " + playerNumber + " IS PARRYING");
+
+            }
+
 
         }
     }
@@ -123,9 +288,9 @@ public class playerMovement : MonoBehaviour
     /// <returns></returns>
     public Vector2 horizontalMovement()
     {
-        if(playerNumber == 1)
+        if (playerNumber == 1)
         {
-            if(Input.GetKey(KeyCode.A))
+            if (Input.GetKey(KeyCode.A))
             {
                 return new Vector2(-moveSpeed, rb.velocity.y);
             }
@@ -161,116 +326,174 @@ public class playerMovement : MonoBehaviour
     void Update()
     {
 
-        if(Time.time >= isAttackingTimer) //when attack is over
+        if (Time.time >= isAttackingTimer)
         {
-            isAttacking = false;
-           
+            if (isAttacking)
+            {
+                isAttacking = false;
+                attackHitbox.enabled = false;
+                hitThisDash.Clear();
+
+                Debug.Log("PLAYER " + playerNumber + " DASH ENDED");
+            }
         }
 
-       
-       
 
-        if(!isAttacking)
+
+
+        if (Time.time >= isParryingTimer) //when parry is over
         {
-           // movement.x = horizontalMovement().x; deprecated
-           horizontalMovement();
-           // rb.gravityScale = 3.0f;
-        }
-        else
-        {
-           // rb.gravityScale = 0.0f;
+            if (isParrying)
+            {
+                Debug.Log("!!!!!Player " + playerNumber + " NOT PARRYING");
+            }
+            isParrying = false;
+
         }
 
-        jumpInput();
-        attackInput();
+
+
+
+        if (stunnedTimer < Time.time)
+        {
+            if (!isAttacking)
+            {
+                // movement.x = horizontalMovement().x; deprecated
+                horizontalMovement();
+                // rb.gravityScale = 3.0f;
+            }
+            else
+            {
+                // rb.gravityScale = 0.0f;
+            }
+
+            jumpInput();
+            parryInput();
+            attackInput();
+        }
 
     }
 
     private void FixedUpdate()
     {
 
-       
+
 
         if (jumpPending)
         {
+            Debug.Log("player" + playerNumber + " has " + health + " left");
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             jumpPending = false;
         }
 
         if (attackPending)
         {
-            isAttacking = true;
-            isAttackingTimer = Time.time + 0.2f;
-           
+            anim.SetTrigger("Attack");
 
-            rb.AddForce(attackDirection * attackForce * (attackDirection.y == 1 ? 2 : 1), ForceMode2D.Impulse);
+            Debug.Log("PLAYER " + playerNumber + " STARTING DASH");
+
+            hitThisDash.Clear();
+            attackHitbox.enabled = true;
+
+            isAttacking = true;
+            isAttackingTimer = Time.time + 0.3f;
+
+            rb.AddForce(
+                attackDirection * attackForce *
+                (attackDirection.y > 0 ? 2 : 1),
+                ForceMode2D.Impulse
+            );
 
             attackPending = false;
         }
 
-        rb.velocity = new Vector2(
+        if (parryPending)
+        {
+            isParrying = true;
+            isParryingTimer = Time.time + 0.4f;
+
+
+
+            parryPending = false;
+        }
+
+
+        if (stunnedTimer < Time.time) //if not stunned
+        {
+            rb.velocity = new Vector2(
             isAttacking ? rb.velocity.x : horizontalMovement().x,
             rb.velocity.y
-        );
+            );
+        }
+
+        updatePassThrough();
     }
+
 
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        //check if jump should refrwsh
         if (collision.gameObject.CompareTag("floor"))
         {
-            Debug.Log("collision" + canJump);
+            anim.SetBool("IsJumping", false);
             canJump = true;
-            Debug.Log("collision" + canJump);
+            return;
         }
 
-        //checks if players are damaged
-        playerCollide(collision);
+        //if we solidly hit the other player mid-dash then updatePassThrough
+        //kept them solid, i.e. they parried. the two trigger hitboxes are the
+        //same shape as the body colliders, so when the bodies get pushed apart
+        //the triggers never actually overlap and OnTriggerEnter2D never fires -
+        //this is the only event that reports a parried dash.
+        if (!isAttacking)
+        {
+            return;
+        }
+
+        Hitbox(collision.collider.GetComponentInParent<playerMovement>());
     }
 
-   
     //chooses (2d) vector direction based on player input
     Vector2 GetAttackDirection()
-    {
-        Vector2 direction = Vector2.zero;
-
-        Debug.Log("P2 DASH BUTTON PRESSED");
-
-        if (playerNumber == 1)
         {
-            if (Input.GetKey(KeyCode.A))
-                direction.x -= 1;
+            Vector2 direction = Vector2.zero;
 
-            if (Input.GetKey(KeyCode.D))
-                direction.x += 1;
+            Debug.Log("P2 DASH BUTTON PRESSED");
 
-            if (Input.GetKey(KeyCode.S))
-                direction.y -= 1;
+            if (playerNumber == 1)
+            {
+                if (Input.GetKey(KeyCode.A))
+                    direction.x -= 1;
 
-            if (Input.GetKey(KeyCode.W))
-                direction.y += 1;
+                if (Input.GetKey(KeyCode.D))
+                    direction.x += 1;
+
+                if (Input.GetKey(KeyCode.S))
+                    direction.y -= 1;
+
+                if (Input.GetKey(KeyCode.W))
+                    direction.y += 1;
+            }
+
+            if (playerNumber == 2)
+            {
+                if (Input.GetKey(KeyCode.LeftArrow))
+                    direction.x -= 1;
+
+                if (Input.GetKey(KeyCode.RightArrow))
+                    direction.x += 1;
+
+                if (Input.GetKey(KeyCode.DownArrow))
+                    direction.y -= 1;
+
+                if (Input.GetKey(KeyCode.UpArrow))
+                    direction.y += 1;
+            }
+
+            Debug.Log(direction);
+
+            return direction.normalized;
         }
 
-        if (playerNumber == 2)
-        {
-            if (Input.GetKey(KeyCode.LeftArrow))
-                direction.x -= 1;
-
-            if (Input.GetKey(KeyCode.RightArrow))
-                direction.x += 1;
-
-            if (Input.GetKey(KeyCode.DownArrow))
-                direction.y -= 1;
-
-            if (Input.GetKey(KeyCode.UpArrow))
-                direction.y += 1;
-        }
-
-        Debug.Log(direction);
-
-        return direction.normalized;
-    }
-
+    
 }
-
