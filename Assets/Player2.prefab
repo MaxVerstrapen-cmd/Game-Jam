@@ -149,6 +149,20 @@ MonoBehaviour:
   m_Name:
   m_EditorClassIdentifier:
   playerNumber: 2
+  parrySprites:
+  - {fileID: 21300000, guid: a14a0f02b71722f45895bfe38dbcad10, type: 3}
+  - {fileID: 21300000, guid: fc77fd1d303013c4c89c80464aa3cb89, type: 3}
+  - {fileID: 21300000, guid: de078b714ec90ab4a868fd5bb14b3c8d, type: 3}
+  - {fileID: 21300000, guid: dffbf30ca49346445a4988c80563cdec, type: 3}
+  - {fileID: 21300000, guid: 00e6303534200204f9a28db0372af09b, type: 3}
+  - {fileID: 21300000, guid: 4fe2635480701a648aa5e6c883d7080f, type: 3}
+  stunSprites:
+  - {fileID: 21300000, guid: 420b45c17389e69459db87dc8e373ea3, type: 3}
+  - {fileID: 21300000, guid: 838ce6185f3a461479ed30be4d481ad3, type: 3}
+  - {fileID: 21300000, guid: e0344d2bf96cf4141a045797a5c7b47d, type: 3}
+  - {fileID: 21300000, guid: 2c807d6eb9f71aa4485a42c3e6cf3405, type: 3}
+  - {fileID: 21300000, guid: 551acd336aa2cef4698c35e97eb0c4ab, type: 3}
+  - {fileID: 21300000, guid: fb078673c0f1f084387bff9f47f854f3, type: 3}
 --- !u!114 &5521600136975369604
 MonoBehaviour:
   m_ObjectHideFlags: 0

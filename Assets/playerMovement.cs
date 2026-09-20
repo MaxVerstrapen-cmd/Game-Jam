@@ -17,6 +17,14 @@ public class playerMovement : MonoBehaviour
 
     [SerializeField] private Collider2D attackHitbox; //for player hitbox
 
+    //VFX frame sequences - shared between both players, so these are set
+    //identically on both Player.prefab and Player2.prefab
+    [SerializeField] private Sprite[] parrySprites; //played on this player when they parry
+    [SerializeField] private Sprite[] stunSprites; //played above this player when their attack gets parried
+
+    private EffectFlipbook parryEffect;
+    private EffectFlipbook stunEffect;
+
     private int jumpForce;
     private int moveSpeed;
     private int attackForce;
@@ -123,10 +131,41 @@ public class playerMovement : MonoBehaviour
 
         attackHitbox.enabled = false;
 
-
-
+        //Parry plays at the base of the sword, sized to the 0.4s parry
+        //window (isParryingTimer) below. Stun plays as a small halo just
+        //above the head, sized to the 0.7s stun window (setIstunned) in
+        //Hitbox(). Both offsets/scales are given in world units (tuned
+        //against the knight, whose scene instance is scaled 3x) - see
+        //CreateEffectChild for why that matters.
+        parryEffect = CreateEffectChild("ParryEffect", new Vector3(0.9f, 1.65f, 0), 3f, parrySprites, 6f / 0.4f);
+        stunEffect = CreateEffectChild("StunEffect", new Vector3(0, 1.75f, 0), 1.05f, stunSprites, 6f / 0.7f);
 
         //Debug.Log(gameObject.name + " -> RB: " + rb.GetInstanceID());
+    }
+
+    //worldPositionOffset/worldScale are in world units, not this player's
+    //local space - the knight and samurai are scaled differently in the
+    //scene (3x vs 5x respectively), and SetParent(transform, false) keeps
+    //local position/scale relative to the parent, so the same local values
+    //would render at different real sizes/offsets depending which player
+    //they're parented to. Dividing by this player's own current scale
+    //cancels that out so the effect looks the same on both. (The x offset's
+    //sign still flips correctly with the character's own left/right facing,
+    //since PlayerAnimation.cs flips by negating this same transform's
+    //localScale.x, and that sign survives the division below.)
+    private EffectFlipbook CreateEffectChild(string name, Vector3 worldPositionOffset, float worldScale, Sprite[] frames, float frameRate)
+    {
+        float parentScale = transform.localScale.x != 0 ? transform.localScale.x : 1f;
+
+        GameObject effectObject = new GameObject(name);
+        effectObject.transform.SetParent(transform, false);
+        effectObject.transform.localPosition = worldPositionOffset / parentScale;
+        effectObject.transform.localScale = Vector3.one * (worldScale / Mathf.Abs(parentScale));
+
+        EffectFlipbook flipbook = effectObject.AddComponent<EffectFlipbook>();
+        flipbook.Initialize(frames, frameRate);
+
+        return flipbook;
     }
 
 
@@ -156,6 +195,7 @@ public class playerMovement : MonoBehaviour
 
             // The attacker gets stunned
             setIstunned(Time.time + 0.7f);
+            stunEffect.Play();
             return;
         }
 
@@ -430,8 +470,7 @@ public class playerMovement : MonoBehaviour
         {
             isParrying = true;
             isParryingTimer = Time.time + 0.4f;
-
-
+            parryEffect.Play();
 
             parryPending = false;
         }
