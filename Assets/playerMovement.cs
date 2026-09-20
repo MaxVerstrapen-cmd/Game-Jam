@@ -9,10 +9,13 @@ public class playerMovement : MonoBehaviour
 
     // Start is called before the first frame update
     private Rigidbody2D rb;
+    private Collider2D bodyCollider;
     private Vector2 movement;
     Animator anim;
     public playerMovement player1;
     public playerMovement player2;
+
+    [SerializeField] private Collider2D attackHitbox; //for player hitbox
 
     private int jumpForce;
     private int moveSpeed;
@@ -41,6 +44,18 @@ public class playerMovement : MonoBehaviour
     private float parryCooldown;
 
     private Vector2 attackDirection;
+
+    //every player this dash has already damaged. one dash overlaps the other
+    //player's body collider AND their hitbox child, and a parried dash also
+    //reports through OnCollisionEnter2D, so without this a single dash would
+    //land two or three times.
+    private readonly HashSet<playerMovement> hitThisDash =
+        new HashSet<playerMovement>();
+
+    //mirrors the current Physics2D.IgnoreCollision state for this pair, so we
+    //only poke the physics engine when it actually changes. re-applying it
+    //every step resets the pair's contact state and re-fires collision events.
+    private bool passingThrough;
 
 
     public bool getIsAttacking()
@@ -71,6 +86,7 @@ public class playerMovement : MonoBehaviour
 
         movement = Vector2.zero;
         rb = GetComponent<Rigidbody2D>();
+        bodyCollider = GetComponent<Collider2D>();
         moveSpeed = 9;
         canJump = true;
 
@@ -86,6 +102,19 @@ public class playerMovement : MonoBehaviour
         player1 = GameObject.Find("player1").GetComponent<playerMovement>();
         player2 = GameObject.Find("player2").GetComponent<playerMovement>();
 
+        //the hitbox children are added per-scene, so the script can easily be
+        //missing off them - without it nothing ever calls Hitbox()
+        if (attackHitbox.GetComponent<HitboxScript>() == null)
+        {
+            Debug.LogWarning(
+                "Player " + playerNumber + ": " + attackHitbox.name +
+                " had no HitboxScript, adding one at runtime"
+            );
+
+            attackHitbox.gameObject.AddComponent<HitboxScript>();
+        }
+
+        attackHitbox.enabled = false;
 
 
 
@@ -96,32 +125,83 @@ public class playerMovement : MonoBehaviour
 
 
 
-    public void playerHitbox(Collider2D other)
+    public void Hitbox(playerMovement otherPlayer)
+    {
+        //only a live dash does damage - the hitbox collider is disabled
+        //outside of one, but the parried-dash collision path is not
+        if (!isAttacking || otherPlayer == null || otherPlayer == this)
+        {
+            return;
+        }
+
+        //Add returns false if this dash already connected with them
+        if (!hitThisDash.Add(otherPlayer))
+        {
+            return;
+        }
+
+        Debug.Log("PLAYER " + playerNumber +
+                  " HIT PLAYER " + otherPlayer.playerNumber);
+
+        if (otherPlayer.isParrying)
+        {
+            Debug.Log("PLAYER " + otherPlayer.playerNumber + " PARRIED!");
+
+            // The attacker gets stunned
+            setIstunned(Time.time + 0.7f);
+            return;
+        }
+
+        if (otherPlayer.health <= 0)
+        {
+            return;
+        }
+
+        otherPlayer.health -= 1;
+
+        Debug.Log(
+            "PLAYER " + otherPlayer.playerNumber +
+            " HEALTH: " + otherPlayer.health
+        );
+    }
+
+
+    /// <summary>
+    /// decides, for this frame, whether the two players are allowed to move
+    /// through each other. a dash passes through the other player, unless that
+    /// player is parrying it - then they stay solid and the dash is blocked.
+    /// both players run this and reach the same answer, so neither one can
+    /// switch the other's pass-through off while their dash is still going.
+    /// </summary>
+    private void updatePassThrough()
     {
         playerMovement otherPlayer =
-            other.GetComponentInParent<playerMovement>();
+            playerNumber == 1 ? player2 : player1;
 
-        if (otherPlayer != null &&
-            !isAttacking &&
-            otherPlayer.getIsAttacking())
+        if (otherPlayer == null || otherPlayer == this)
         {
-            Debug.Log("player" + playerNumber + " Parry??? " + isParrying);
-
-            if (isParrying)
-            {
-                otherPlayer.setIstunned(Time.time + 0.7f);
-            }
-            else
-            {
-                health -= 1;
-            }
+            return;
         }
+
+        bool passThrough =
+            (isAttacking && !otherPlayer.isParrying) ||
+            (otherPlayer.isAttacking && !isParrying);
+
+        if (passThrough == passingThrough)
+        {
+            return;
+        }
+
+        passingThrough = passThrough;
+
+        Physics2D.IgnoreCollision(
+            bodyCollider,
+            otherPlayer.bodyCollider,
+            passThrough
+        );
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        playerHitbox(other);
-    }
+
 
 
     /// <summary>
@@ -246,21 +326,20 @@ public class playerMovement : MonoBehaviour
     void Update()
     {
 
-        if (Time.time >= isAttackingTimer) //when attack is over
+        if (Time.time >= isAttackingTimer)
         {
-            isAttacking = false;
+            if (isAttacking)
+            {
+                isAttacking = false;
+                attackHitbox.enabled = false;
+                hitThisDash.Clear();
 
-                Physics2D.IgnoreCollision(
-           GetComponent<Collider2D>(),
-           playerNumber == 1
-               ? player2.GetComponent<Collider2D>()
-               : player1.GetComponent<Collider2D>(),
-           false);
-
+                Debug.Log("PLAYER " + playerNumber + " DASH ENDED");
+            }
         }
 
-       
-       
+
+
 
         if (Time.time >= isParryingTimer) //when parry is over
         {
@@ -309,31 +388,21 @@ public class playerMovement : MonoBehaviour
 
         if (attackPending)
         {
-            if (playerNumber == 1)
-            {
-                anim.SetTrigger("Attack");
+            anim.SetTrigger("Attack");
 
-                Physics2D.IgnoreCollision(
-                GetComponent<Collider2D>(),
-                player2.GetComponent<Collider2D>(),
-                true
-                );
-            }
-            else
-            {
-                Physics2D.IgnoreCollision(
-                GetComponent<Collider2D>(),
-                player1.GetComponent<Collider2D>(),
-                true
-                );
-            }
+            Debug.Log("PLAYER " + playerNumber + " STARTING DASH");
 
+            hitThisDash.Clear();
+            attackHitbox.enabled = true;
 
             isAttacking = true;
             isAttackingTimer = Time.time + 0.3f;
 
-
-            rb.AddForce(attackDirection * attackForce * (attackDirection.y == 1 ? 2 : 1), ForceMode2D.Impulse);
+            rb.AddForce(
+                attackDirection * attackForce *
+                (attackDirection.y > 0 ? 2 : 1),
+                ForceMode2D.Impulse
+            );
 
             attackPending = false;
         }
@@ -356,8 +425,9 @@ public class playerMovement : MonoBehaviour
             rb.velocity.y
             );
         }
-    }
 
+        updatePassThrough();
+    }
 
 
 
@@ -366,10 +436,21 @@ public class playerMovement : MonoBehaviour
         if (collision.gameObject.CompareTag("floor"))
         {
             anim.SetBool("IsJumping", false);
-            Debug.Log("collision" + canJump);
             canJump = true;
-            Debug.Log("collision" + canJump);
+            return;
         }
+
+        //if we solidly hit the other player mid-dash then updatePassThrough
+        //kept them solid, i.e. they parried. the two trigger hitboxes are the
+        //same shape as the body colliders, so when the bodies get pushed apart
+        //the triggers never actually overlap and OnTriggerEnter2D never fires -
+        //this is the only event that reports a parried dash.
+        if (!isAttacking)
+        {
+            return;
+        }
+
+        Hitbox(collision.collider.GetComponentInParent<playerMovement>());
     }
 
     //chooses (2d) vector direction based on player input
