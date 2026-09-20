@@ -1,6 +1,13 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+//healthBarUpdater.cs destroys a player's GameObject the instant its health
+//hits 0, in its own Update(). Once that Destroy() call happens, this
+//script's cached player1/player2 references immediately compare == null
+//(Unity does this before the object is actually removed at end of frame),
+//so Update() below has to run - and see the 0 health - before that happens,
+//or it silently bails out on the null check and the round never ends.
+[DefaultExecutionOrder(-100)]
 public class roundManager : MonoBehaviour
 {
     public int player1Score;
@@ -79,12 +86,12 @@ public class roundManager : MonoBehaviour
 
     void Update()
     {
-        if (player1 == null || player2 == null)
-        {
-            return;
-        }
-
-        if (!roundOver && (player1.getHealth() <= 0 || player2.getHealth() <= 0))
+        //this check needs player1/player2 to still exist, so it can't run
+        //once healthBarUpdater destroys the loser's GameObject - but the
+        //roundOver follow-through below must NOT depend on that same guard,
+        //or the round gets stuck forever right after the players are gone
+        if (player1 != null && player2 != null &&
+            !roundOver && (player1.getHealth() <= 0 || player2.getHealth() <= 0))
         {
             //WHEN THE ROUND ENDS, SET A TIMER FOR THE ROUND TO RESET - gives
             //the finishing hit's Attack/Hurt animations (up to 0.5833333s,

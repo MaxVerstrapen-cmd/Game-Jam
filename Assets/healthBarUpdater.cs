@@ -34,8 +34,10 @@ public class healthBarUpdater : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        if (p1.getHealth() != OriginalHealth1)
+        //once a player hits 0 health it (and its health bar) gets destroyed
+        //below - after that, p1/p2 are gone and calling getHealth() on them
+        //throws a NullReferenceException every frame for the rest of the match
+        if (p1 != null && p1.getHealth() != OriginalHealth1)
         {
             OriginalHealth1 = p1.getHealth();
 
@@ -46,11 +48,11 @@ public class healthBarUpdater : MonoBehaviour
                 Destroy(player1);
                 Destroy(hp1);
             }
-            
+
         }
 
 
-        if (p2.getHealth() != OriginalHealth2)
+        if (p2 != null && p2.getHealth() != OriginalHealth2)
         {
             OriginalHealth2 = p2.getHealth();
 
