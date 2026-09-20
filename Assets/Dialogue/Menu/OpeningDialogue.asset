@@ -16,18 +16,23 @@ MonoBehaviour:
   speakerName: Narrator
   speakerPortrait: {fileID: 0}
   lines:
-  - text: The Battle is About to Begin
+  - speakerName: 
+    text: Beyond These Accursed Castle Walls, There Awaits a Princess
     portrait: {fileID: 0}
     soundEffect: {fileID: 0}
-  - text: Two Fighters have entered the arena once again....
+  - speakerName: 
+    text: Two Fighters, Head and Heel, Appear Across From Each Other Once Again
     portrait: {fileID: 0}
     soundEffect: {fileID: 0}
-  - text: Green fights for Player One
+  - speakerName: Head
+    text: '"Out of my way Heel, I am getting over you!"'
     portrait: {fileID: 21300000, guid: 6ec27bd7f69586846a1a8348ea74d6bc, type: 3}
     soundEffect: {fileID: 0}
-  - text: ' Purple fights for Player Two'
+  - speakerName: Heel
+    text: '"You''ll have to get through me first, Head!"'
     portrait: {fileID: 21300000, guid: 499ed54a70d969549a99826074fcd08c, type: 3}
     soundEffect: {fileID: 0}
-  - text: Prepare to fight!
+  - speakerName: 
+    text: Fighters! Begin!
     portrait: {fileID: 0}
     soundEffect: {fileID: 0}

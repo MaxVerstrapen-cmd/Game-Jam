@@ -18,6 +18,7 @@ public class playerMovement : MonoBehaviour
     private int moveSpeed;
     private int attackForce;
 
+    private int maxSpeed;
 
     private bool canJump;
     private bool jumpPending;
@@ -26,6 +27,7 @@ public class playerMovement : MonoBehaviour
     private bool attackPending;
     private bool isAttacking;
 
+    private int health = 3;
     private bool parryPending;
     private bool isParrying;
 
@@ -66,6 +68,7 @@ public class playerMovement : MonoBehaviour
         anim = GetComponent<Animator>();
         jumpForce = 18;
         attackForce = 17;
+        maxSpeed = 20;
 
 
         movement = Vector2.zero;
@@ -74,7 +77,6 @@ public class playerMovement : MonoBehaviour
         canJump = true;
 
 
-        health = 3;
 
         parryCooldown = 0;
         isParryingTimer = 0;
@@ -130,7 +132,6 @@ public class playerMovement : MonoBehaviour
     public void jumpInput()
     {
 
-
         if (isAttacking)
         {
             return;
@@ -140,6 +141,10 @@ public class playerMovement : MonoBehaviour
         {
             if (canJump)
             {
+                if(playerNumber == 1)
+                {
+                    anim.SetBool("IsJumping", true);
+                }
                 jumpPending = true;
                 canJump = false;
             }
@@ -256,6 +261,9 @@ public class playerMovement : MonoBehaviour
 
         }
 
+       
+       
+
         if (Time.time >= isParryingTimer) //when parry is over
         {
             if (isParrying)
@@ -359,12 +367,12 @@ public class playerMovement : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("floor"))
         {
+            anim.SetBool("IsJumping", false);
             Debug.Log("collision" + canJump);
             canJump = true;
             Debug.Log("collision" + canJump);
         }
     }
-
 
     //chooses (2d) vector direction based on player input
     Vector2 GetAttackDirection()
