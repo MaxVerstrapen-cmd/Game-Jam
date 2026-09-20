@@ -159,6 +159,15 @@ public class playerMovement : MonoBehaviour
 
         otherPlayer.health -= 1;
 
+        if (otherPlayer.playerNumber == 2)
+        {
+            otherPlayer.anim.SetTrigger("Hurt");
+        }
+        else if (otherPlayer.playerNumber == 1)
+        {
+            otherPlayer.anim.SetTrigger("Hurt");
+        }
+
         Debug.Log(
             "PLAYER " + otherPlayer.playerNumber +
             " HEALTH: " + otherPlayer.health
