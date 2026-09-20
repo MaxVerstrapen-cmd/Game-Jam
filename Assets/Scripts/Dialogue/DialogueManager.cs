@@ -47,7 +47,9 @@ public class DialogueManager : MonoBehaviour
     {
         DialogueLine line = currentDialogue.lines[currentLineIndex];
 
-        speakerNameText.text = currentDialogue.speakerName;
+        speakerNameText.text = string.IsNullOrWhiteSpace(line.speakerName)
+                ? currentDialogue.speakerName
+                : line.speakerName;
         dialogueText.text = line.text;
 
         if (line.portrait != null)
