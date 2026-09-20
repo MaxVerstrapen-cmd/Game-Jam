@@ -39,6 +39,8 @@ public class playerMovement : MonoBehaviour
     private float isAttackingTimer;
     private float attackCooldown;
 
+    private float jumpCooldown;
+
     private float isParryingTimer;
     private float parryCooldown;
 
@@ -99,6 +101,7 @@ public class playerMovement : MonoBehaviour
         parryCooldown = 0;
         isParryingTimer = 0;
         stunnedTimer = 0;
+        jumpCooldown = 0;
 
         parryPending = false;
         isParrying = false;
@@ -230,7 +233,8 @@ public class playerMovement : MonoBehaviour
 
         if ((Input.GetKey(KeyCode.W) && playerNumber == 1) || (Input.GetKey(KeyCode.UpArrow) && playerNumber == 2))
         {
-            if (canJump)
+
+            if (canJump )
             {
                 if(playerNumber == 1)
                 {
@@ -238,6 +242,7 @@ public class playerMovement : MonoBehaviour
                 }
                 jumpPending = true;
                 canJump = false;
+                jumpCooldown = Time.time + 0.2f;
             }
         }
     }
@@ -395,6 +400,7 @@ public class playerMovement : MonoBehaviour
         if (jumpPending)
         {
             Debug.Log("player" + playerNumber + " has " + health + " left");
+            rb.velocity = new Vector2(rb.velocity.x, 0);
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             jumpPending = false;
         }
@@ -445,7 +451,7 @@ public class playerMovement : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("floor"))
+        if (collision.gameObject.CompareTag("floor") && jumpCooldown <= Time.time)
         {
             anim.SetBool("IsJumping", false);
             canJump = true;

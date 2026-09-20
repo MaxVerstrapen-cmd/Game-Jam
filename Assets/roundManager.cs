@@ -75,11 +75,11 @@ public class roundManager : MonoBehaviour
         if (roundOver && roundEndTimer <= Time.time)
         {
             Debug.Log("round ending imminently?");
-            if (player1Score == 3)
+            if (player1Score == 5)
             {
                 Debug.Log("player1 wins");
             }
-            else if (player2Score == 3)
+            else if (player2Score == 5)
             {
                 Debug.Log("player2 wins");
             }
